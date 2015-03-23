@@ -1,0 +1,43 @@
+@import 'variables';
+@import 'fonts';
+@import 'header';
+@import 'main-content';
+
+
+html * {
+    font-family: $font-stack;
+    a {
+        color: #36bd8e;
+        text-decoration: none;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+    }
+    input:focus {
+        outline: none;
+    }
+}
+
+body {
+    background: #fdfdfd;
+    input[type="text"] {
+        padding: 10px 60px 10px 20px;
+        border: none;
+        background: #E9E9E9;
+        margin-right: 10px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        font-size: 0.7em;
+        outline: none;
+    }
+    input[type="submit"] {
+        background: #51ADED;
+        padding: 10px;
+        border: none;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        color: #fff;
+    }
+}

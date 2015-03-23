@@ -1,0 +1,37 @@
+main {
+    margin: 0 0 0 250px;
+    #hero {
+        text-align: center;
+        padding: 100px 150px;
+
+        #name {
+            margin: 0 0 15px 0;
+            color: $green;
+            font-size: 24px;
+            font-weight: $bold;
+            text-transform: uppercase;
+        }
+
+        #job {
+            font-size: 30px;
+            font-weight: $thin;
+            font-size: 16px;
+        }
+        form {
+            padding: 25px 0;
+        }
+
+        #announcement {
+            margin: 25px 0;
+            font-weight: $bold;
+        }
+    }
+    #posts {
+        text-align: center;
+        article {
+            background: #eee;
+            margin: 0 auto 25px auto;
+            padding: 50px 0;
+        }
+    }
+}

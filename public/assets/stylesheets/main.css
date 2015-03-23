@@ -1,0 +1,66 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+header {
+  background: #36bd8e;
+  width: 250px;
+  min-height: 100%;
+  position: fixed; }
+
+main {
+  margin: 0 0 0 250px; }
+  main #hero {
+    text-align: center;
+    padding: 100px 150px; }
+    main #hero #name {
+      margin: 0 0 15px 0;
+      color: #36bd8e;
+      font-size: 24px;
+      font-weight: 700;
+      text-transform: uppercase; }
+    main #hero #job {
+      font-size: 30px;
+      font-weight: 300;
+      font-size: 16px; }
+    main #hero form {
+      padding: 25px 0; }
+    main #hero #announcement {
+      margin: 25px 0;
+      font-weight: 700; }
+  main #posts {
+    text-align: center; }
+    main #posts article {
+      background: #eee;
+      margin: 0 auto 25px auto;
+      padding: 50px 0; }
+
+html * {
+  font-family: "Open Sans", sans-serif; }
+  html * a {
+    color: #36bd8e;
+    text-decoration: none; }
+  html * h1, html * h2, html * h3, html * h4, html * h5, html * h6 {
+    margin: 0; }
+  html * input:focus {
+    outline: none; }
+
+body {
+  background: #fdfdfd; }
+  body input[type="text"] {
+    padding: 10px 60px 10px 20px;
+    border: none;
+    background: #E9E9E9;
+    margin-right: 10px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: 0.7em;
+    outline: none; }
+  body input[type="submit"] {
+    background: #51ADED;
+    padding: 10px;
+    border: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    color: #fff; }
+
+/*# sourceMappingURL=main.css.map */
