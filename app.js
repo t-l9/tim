@@ -1,14 +1,11 @@
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var cookieParser = require('cookie-parser');
+var express    = require('express');
+var app        = express();
 var bodyParser = require('body-parser');
-var morgan = require('morgan');
-var config = require('./config');
-
-var app = express();
-
-
+var morgan     = require('morgan');
+var mongoose   = require('mongoose');
+var jwt        = require('jsonwebtoken');
+var config     = require('./config');
+var path       = require('path');
 
 //---------------------------------------
 //  basic setup
@@ -26,19 +23,22 @@ app.use(function(req, res, next) {
     next();
 });
 
-
-// uncomment after placing your favicon in /public
-//app.use(favicon(__dirname + '/public/favicon.ico'));
+//---------------------------------------
+//  log all requests
+//---------------------------------------
 app.use(morgan('dev'));
 
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+//---------------------------------------
+//  basic route
+//---------------------------------------
+app.use(express.static(__dirname + '/public'));
 
-
+//---------------------------------------
+//  catchall requests not handles by node
+//---------------------------------------
 app.get('*', function(req, res) {
     res.sendFile(path.join(__dirname + '/public/app/views/index.html'));
 });
-
 
 //---------------------------------------
 //  start server
