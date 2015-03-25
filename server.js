@@ -29,6 +29,11 @@ app.use(function(req, res, next) {
 app.use(morgan('dev'));
 
 //---------------------------------------
+//  DB
+//---------------------------------------
+mongoose.connect(config.database);
+
+//---------------------------------------
 //  basic route
 //---------------------------------------
 app.use(express.static(__dirname + '/public'));
