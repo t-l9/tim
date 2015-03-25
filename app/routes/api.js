@@ -6,7 +6,7 @@ module.exports = function(app, express) {
 
     apiRouter.route('/posts')
         .post(function(req, res) {
-            console.log(req.body.title);
+
             var post = new Post();
 
             post.title   = req.body.title;
@@ -28,10 +28,10 @@ module.exports = function(app, express) {
                     }
                 }
 
-                res.json({ message: 'Post created.' })
-
+                res.json({ message: 'Post created.' });
             });
         })
+
         .get(function(req, res) {
             Post.find(function(err, users) {
                 if (err) res.send(err);
