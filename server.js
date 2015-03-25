@@ -39,6 +39,12 @@ mongoose.connect(config.database);
 app.use(express.static(__dirname + '/public'));
 
 //---------------------------------------
+//  get router instance & api prefix
+//---------------------------------------
+var apiRouter = require('./app/routes/api')(app, express);
+app.use('/api', apiRouter);
+
+//---------------------------------------
 //  catchall requests not handles by node
 //---------------------------------------
 app.get('*', function(req, res) {
