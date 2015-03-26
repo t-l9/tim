@@ -1,11 +1,16 @@
 angular.module('postService', [])
     .factory('Post', function($http) {
-        return {
-            all: function() {
-                return $http.get('/api/posts/');
-            },
-            post: function() {
-                return $http.post('/api/posts/')
-            }
-        };
+
+        var postFactory = {};
+
+        postFactory.all = function() {
+            return $http.get('/api/posts/');
+        }
+
+        postFactory.post = function() {
+            return $http.post('/api/posts/')
+        }
+
+        return postFactory;
+                
     });

@@ -1,3 +1,5 @@
 angular.module('mainApp', [
-    'app.routes'
+    'app.routes',
+    'postService',
+    'postCtrl'
 ]);
