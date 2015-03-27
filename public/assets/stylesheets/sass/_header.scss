@@ -1,6 +1,24 @@
 header {
-    background: $green;
-    width: 250px;
+    width: 300px;
     min-height: 100%;
     position: fixed;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+    background-image: -webkit-gradient(
+    	linear,
+    	left top,
+    	left bottom,
+    	color-stop(0, #31547E),
+    	color-stop(1, #BBD9C8)
+    );
+    background-image: -o-linear-gradient(bottom, #31547E 0%, #BBD9C8 100%);
+    background-image: -moz-linear-gradient(bottom, #31547E 0%, #BBD9C8 100%);
+    background-image: -webkit-linear-gradient(bottom, #31547E 0%, #BBD9C8 100%);
+    background-image: -ms-linear-gradient(bottom, #31547E 0%, #BBD9C8 100%);
+    background-image: linear-gradient(to bottom, #31547E 0%, #BBD9C8 100%);
+    img {
+        border-radius: 100%;
+        width: 125px;
+    }
 }

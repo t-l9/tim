@@ -1,6 +1,15 @@
 #posts {
-    text-align: center;
     article {
         background: #eee;
+        text-align: left;
+        a.title {
+            font-weight: $bold;
+            font-size: 32px;
+            color: #000;
+            font-family: $font-sans-serif;
+        }
+        p {
+            padding: 12px 0;
+        }
     }
 }

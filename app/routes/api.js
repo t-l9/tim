@@ -33,10 +33,21 @@ module.exports = function(app, express) {
         })
 
         .get(function(req, res) {
-            Post.find(function(err, users) {
+            Post.find(function(err, posts) {
                 if (err) res.send(err);
-                res.json(users);
+                res.json(posts);
             });
+        });
+
+//---------------------------------------
+//  single user
+//---------------------------------------
+    apiRouter.route('/posts/:post_id')
+        .get(function(req, res) {
+            Post.findById(req.params.post_id, function(err, post) {
+                if (err) res.send(err);
+                res.json(post)
+            })
         });
 
     return apiRouter;

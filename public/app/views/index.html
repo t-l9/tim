@@ -30,10 +30,9 @@
     </head>
     <body ng-app="mainApp">
         <header>
+            <!-- <img src="assets/images/profile.png" alt="Tim Lauter"> -->
         </header>
         <main>
-            <div ng-view></div>
-
             <section id="hero">
                 <h1 id="name">Tim Lauter</h1>
                 <h2 id="job">I'm a front-end developer by day and full-stack developer by night.</h2>
@@ -55,15 +54,7 @@
 
             <section id="posts">
                 <div class="row">
-                     <article class="small-9 large-centered columns">
-                         post 1
-                     </article>
-                     <article class="small-9 large-centered columns">
-                         post 2
-                     </article>
-                     <article class="small-9 large-centered columns">
-                         post 3
-                     </article>
+                     <div ng-view></div>
                 </div>
             </section>
 
