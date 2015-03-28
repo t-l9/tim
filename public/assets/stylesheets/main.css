@@ -6,6 +6,7 @@ header {
   position: fixed;
   text-align: center;
   padding: 100px 0;
+  right: 0;
   color: #fff;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #31547E), color-stop(1, #BBD9C8));
   background-image: -o-linear-gradient(bottom, #31547E 0%, #BBD9C8 100%);
@@ -18,7 +19,7 @@ header {
     width: 125px; }
 
 main {
-  margin: 0 0 0 300px; }
+  margin: 0 300px 0 0; }
   main #hero {
     text-align: center;
     padding: 100px 150px; }
