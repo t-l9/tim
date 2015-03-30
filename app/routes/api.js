@@ -47,6 +47,7 @@ module.exports = function(app, express) {
             Post.findById(req.params.post_id, function(err, post) {
                 if (err) res.send(err);
                 res.json(post)
+                console.log(post);
             })
         });
 

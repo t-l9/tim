@@ -2,6 +2,7 @@
     article {
         background: #eee;
         text-align: left;
+        margin: 0 auto 25px auto;
         a.title {
             font-weight: $bold;
             font-size: 32px;
@@ -11,7 +12,7 @@
         p {
             padding: 12px 0;
         }
-        span.topic {
+        span.date {
             display: block;
         }
     }

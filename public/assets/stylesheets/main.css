@@ -41,7 +41,8 @@ main {
 
 #posts article {
   background: #eee;
-  text-align: left; }
+  text-align: left;
+  margin: 0 auto 25px auto; }
   #posts article a.title {
     font-weight: 700;
     font-size: 32px;
@@ -49,7 +50,7 @@ main {
     font-family: "Open Sans", sans-serif; }
   #posts article p {
     padding: 12px 0; }
-  #posts article span.topic {
+  #posts article span.date {
     display: block; }
 
 html * {

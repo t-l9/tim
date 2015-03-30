@@ -11,10 +11,16 @@ var PostSchema = new Schema({
 
 });
 
-new Schema({
-    name: String,
-    username: { type: String, required: true, index: { unique: true }},
-    password: { type: String, required: true, select: false }
+PostSchema.pre('save', function(next) {
+
+    var currentDate = new Date();
+
+    this.date = currentDate;
+
+    if (!this.date)
+        this.created_at = currentDate;
+
+    next();
 });
 
 module.exports = mongoose.model('Post', PostSchema);
