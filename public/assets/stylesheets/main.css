@@ -49,6 +49,8 @@ main {
     font-family: "Open Sans", sans-serif; }
   #posts article p {
     padding: 12px 0; }
+  #posts article span.topic {
+    display: block; }
 
 html * {
   font-family: "Merriweather", serif; }
