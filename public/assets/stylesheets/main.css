@@ -1,13 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,700);
 header {
-  width: 300px;
+  width: 50%;
   min-height: 100%;
   position: fixed;
   text-align: center;
   padding: 100px 0;
-  right: 0;
-  color: #fff;
+  left: 0;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #31547E), color-stop(1, #BBD9C8));
   background-image: -o-linear-gradient(bottom, #31547E 0%, #BBD9C8 100%);
   background-image: -moz-linear-gradient(bottom, #31547E 0%, #BBD9C8 100%);
@@ -17,27 +16,23 @@ header {
   header img {
     border-radius: 100%;
     width: 125px; }
+  header #name, header #job, header #announcement {
+    color: #ffffff; }
+  header #name {
+    margin: 0 0 15px 0;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  header #job {
+    font-size: 30px;
+    font-weight: 300;
+    font-size: 16px; }
+  header #announcement {
+    margin: 25px 0;
+    font-weight: 300; }
 
 main {
-  margin: 0 300px 0 0; }
-  main #hero {
-    text-align: center;
-    padding: 100px 150px; }
-    main #hero #name {
-      margin: 0 0 15px 0;
-      color: #36bd8e;
-      font-size: 24px;
-      font-weight: 700;
-      text-transform: uppercase; }
-    main #hero #job {
-      font-size: 30px;
-      font-weight: 300;
-      font-size: 16px; }
-    main #hero form {
-      padding: 25px 0; }
-    main #hero #announcement {
-      margin: 25px 0;
-      font-weight: 700; }
+  margin: 0 0 0 50%; }
 
 #posts article {
   background: #eee;

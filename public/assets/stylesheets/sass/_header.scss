@@ -1,11 +1,10 @@
 header {
-    width: 300px;
+    width: 50%;
     min-height: 100%;
     position: fixed;
     text-align: center;
     padding: 100px 0;
-    right: 0;
-    color: #fff;
+    left: 0;
     background-image: -webkit-gradient(
     	linear,
     	left top,
@@ -22,4 +21,27 @@ header {
         border-radius: 100%;
         width: 125px;
     }
+
+    #name, #job, #announcement {
+        color: $white
+    }
+
+    #name {
+        margin: 0 0 15px 0;
+        font-size: 24px;
+        font-weight: $bold;
+        text-transform: uppercase;
+    }
+
+    #job {
+        font-size: 30px;
+        font-weight: $thin;
+        font-size: 16px;
+    }
+
+    #announcement {
+        margin: 25px 0;
+        font-weight: $thin;
+    }
+
 }
