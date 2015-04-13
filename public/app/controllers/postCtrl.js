@@ -5,6 +5,8 @@ angular.module('postCtrl', ['postService'])
         Post.all()
             .success(function(data) {
                 vm.posts = data;
+                //nl2br function here!!!
+                console.log(vm.posts);
             });
 
         Post.get($routeParams.user_id)

@@ -5,7 +5,7 @@ header {
   min-height: 100%;
   position: fixed;
   text-align: center;
-  padding: 100px 0;
+  padding: 25px 0;
   left: 0;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #31547E), color-stop(1, #BBD9C8));
   background-image: -o-linear-gradient(bottom, #31547E 0%, #BBD9C8 100%);
@@ -15,18 +15,20 @@ header {
   background-image: linear-gradient(to bottom, #31547E 0%, #BBD9C8 100%); }
   header img {
     border-radius: 100%;
-    width: 125px; }
+    width: 75px;
+    margin: 0 25px;
+    float: left; }
   header #name, header #job, header #announcement {
-    color: #ffffff; }
+    color: #ffffff;
+    font-weight: 300;
+    text-align: left;
+    display: block; }
   header #name {
-    margin: 0 0 15px 0;
     font-size: 24px;
-    font-weight: 700;
     text-transform: uppercase; }
   header #job {
-    font-size: 30px;
     font-weight: 300;
-    font-size: 16px; }
+    font-size: 12px; }
   header #announcement {
     margin: 25px 0;
     font-weight: 300; }
@@ -35,9 +37,10 @@ main {
   margin: 0 0 0 50%; }
 
 #posts article {
-  background: #eee;
+  /* background: #eee; */
   text-align: left;
-  margin: 0 auto 25px auto; }
+  margin: 0 auto 25px auto;
+  border-bottom: 1px solid #eee; }
   #posts article a.title {
     font-weight: 700;
     font-size: 32px;
@@ -47,6 +50,8 @@ main {
     padding: 12px 0; }
   #posts article span.date {
     display: block; }
+  #posts article:last-child {
+    border: none; }
 
 html * {
   font-family: "Merriweather", serif; }

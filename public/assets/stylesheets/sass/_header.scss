@@ -3,7 +3,7 @@ header {
     min-height: 100%;
     position: fixed;
     text-align: center;
-    padding: 100px 0;
+    padding: 25px 0;
     left: 0;
     background-image: -webkit-gradient(
     	linear,
@@ -17,26 +17,29 @@ header {
     background-image: -webkit-linear-gradient(bottom, #31547E 0%, #BBD9C8 100%);
     background-image: -ms-linear-gradient(bottom, #31547E 0%, #BBD9C8 100%);
     background-image: linear-gradient(to bottom, #31547E 0%, #BBD9C8 100%);
+
     img {
         border-radius: 100%;
-        width: 125px;
+        width: 75px;
+        margin: 0 25px;
+        float: left;
     }
 
     #name, #job, #announcement {
-        color: $white
+        color: $white;
+        font-weight: $thin;
+        text-align: left;
+        display: block;
     }
 
     #name {
-        margin: 0 0 15px 0;
         font-size: 24px;
-        font-weight: $bold;
         text-transform: uppercase;
     }
 
     #job {
-        font-size: 30px;
         font-weight: $thin;
-        font-size: 16px;
+        font-size: 12px;
     }
 
     #announcement {
