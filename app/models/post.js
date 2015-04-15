@@ -3,11 +3,11 @@ var Schema   = mongoose.Schema;
 
 var PostSchema = new Schema({
 
-    title: { type: String, required: true },
-    content: { type: String, required: true },
+    title: { type: String, required: false },
+    content: { type: String, required: false },
     date: { type: Date, default: Date.now },
     img: String,
-    topic: { type: String, required: true }
+    topic: { type: String, required: false }
 
 });
 

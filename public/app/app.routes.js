@@ -11,15 +11,22 @@ angular.module('app.routes', ['ngRoute'])
 			controllerAs: 'post'
 		})
 
-		.when('/:user_id', {
-			templateUrl: 'app/views/pages/postSingle.html',
+		// .when('/:user_id', {
+		// 	templateUrl: 'app/views/pages/postSingle.html',
+		// 	controller: 'postController',
+		// 	controllerAs: 'post'
+		// })
+		//
+		// login page
+
+		// .when('/user_id', {
+		// 	templateUrl: 'app/views/pages/postSinge.html'
+		// });
+
+		.when('/admin', {
+			templateUrl: 'app/views/pages/admin.html',
 			controller: 'postController',
 			controllerAs: 'post'
-		})
-
-		// login page
-		.when('/admin', {
-            templateUrl: 'app/views/pages/admin.html',
 		})
 
 		.otherwise({

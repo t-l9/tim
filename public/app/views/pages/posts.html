@@ -1,7 +1,11 @@
-<article ng-repeat="post in post.posts" class="small-9 large-centered columns">
+<section id="posts">
+    <div class="row">
+        <article ng-repeat="post in post.posts" class="small-9 large-centered columns">
 
-        <a class="title" href="{{ post._id }}">{{ post.title }}</a>
-        <p>{{ post.content }}</p>
-        <span class="date">{{ post.date }}</span>
+                <a class="title" href="{{ post.title }}">{{ post.title }}</a>
+                <p>{{ post.content }}</p>
+                <span class="date">{{ post.date }}</span>
 
-</article>
+        </article>
+    </div>
+</section>

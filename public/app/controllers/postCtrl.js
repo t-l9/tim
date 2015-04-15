@@ -2,11 +2,6 @@ angular.module('postCtrl', ['postService'])
     .controller('postController', function(Post, $routeParams) {
         var vm = this;
 
-        // function nl2br(postContent) {
-        //     console.log(postContent);
-        //     return postContent.replace('\n', '<br>');
-        // };
-
         function nl2br(str) {
 
             return str.replace(/\\n/g, "<br />");
@@ -24,7 +19,6 @@ angular.module('postCtrl', ['postService'])
 
                 vm.posts = data;
 
-                console.log(vm.posts);
 
              });
 
@@ -32,5 +26,13 @@ angular.module('postCtrl', ['postService'])
             .success(function(data) {
                 vm.post = data;
             });
+
+        vm.createPost = function() {
+            Post.post(postData)
+                .success(function(data) {
+                    console.log(data);
+                });
+
+        }
 
     });

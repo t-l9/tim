@@ -35,7 +35,7 @@ module.exports = function(app, express) {
         .get(function(req, res) {
             Post.find(function(err, posts) {
                 if (err) res.send(err);
-                res.json(posts);
+                return res.json(posts);
             });
         });
 
@@ -46,8 +46,7 @@ module.exports = function(app, express) {
         .get(function(req, res) {
             Post.findById(req.params.post_id, function(err, post) {
                 if (err) res.send(err);
-                res.json(post)
-                console.log(post);
+                return res.json(post)
             })
         });
 
