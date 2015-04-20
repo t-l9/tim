@@ -2,6 +2,7 @@ angular.module('postCtrl', ['postService'])
     .controller('postController', function(Post, $routeParams) {
         var vm = this;
 
+
         // var nl2br = function(str) {
         //
         //     if (str.length) {
@@ -15,7 +16,7 @@ angular.module('postCtrl', ['postService'])
 
         Post.all()
             .success(function(data) {
-                // vm.posts = data;
+                vm.posts = data;
 
                 // for(i=0; i < vm.posts.length; i++) {
                 //
