@@ -1,34 +1,30 @@
 <h1>Admin</h1>
 
-<form>
+<form name="postForm" ng-submit="post.createPost(postData)">
 
-    <!-- USERNAME INPUT -->
     <div class="form-group">
         <label>title</label>
-        <input type="text" class="form-control" ng-model="userData.title">
+        <input type="text" class="form-control" ng-model="postData.title">
     </div>
 
-    <!-- PASSWORD INPUT -->
     <div class="form-group">
         <label>Content</label>
-        <textarea type="text" class="form-control" ng-model="userData.password">
+        <textarea type="text" class="form-control" ng-model="postData.content">
 
         </textarea>
     </div>
 
-
     <div class="form-group">
         <label>Image</label>
-        <input type="text" class="form-control" ng-model="userData.img">
+        <input type="text" class="form-control" ng-model="postData.img">
     </div>
 
     <div class="form-group">
         <label>Topic</label>
-        <input type="text" class="form-control" ng-model="userData.topic">
+        <input type="text" class="form-control" ng-model="postData.topic">
     </div>
 
-    <!-- LOGIN BUTTON -->
-    <button type="submit" ng-click="createPost(userData)" class="btn btn-block btn-primary">
+    <button type="submit" class="btn btn-block btn-primary">
         <span>Add Post</span>
     </button>
 
