@@ -1,5 +1,6 @@
 angular.module('mainApp', [
     'app.routes',
     'postService',
-    'postCtrl'
+    'postCtrl',
+    'ngSanitize'
 ]);

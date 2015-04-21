@@ -47,7 +47,8 @@ main {
     color: #000;
     font-family: "Open Sans", sans-serif; }
   #posts article p {
-    padding: 12px 0; }
+    padding: 12px 0;
+    white-space: pre-line; }
   #posts article span.date {
     display: block; }
   #posts article:last-child {

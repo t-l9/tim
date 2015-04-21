@@ -8,9 +8,7 @@ module.exports = function(app, express) {
         .post(function(req, res) {
 
             var post = new Post();
-            console.log('----------');
-            console.log(req.body);
-            console.log('----------');
+            
             post.title   = req.body.title;
             post.content = req.body.content;
             post.date    = req.body.date;
