@@ -8,7 +8,7 @@ module.exports = function(app, express) {
         .post(function(req, res) {
 
             var post = new Post();
-            
+
             post.title   = req.body.title;
             post.content = req.body.content;
             post.date    = req.body.date;
@@ -33,10 +33,13 @@ module.exports = function(app, express) {
         })
 
         .get(function(req, res) {
-            Post.find(function(err, posts) {
-                if (err) res.send(err);
-                return res.json(posts);
-            });
+            Post.find()
+                .sort({ _id : -1 })
+                    .exec(function(err, posts) {
+                        if (err) res.send(err);
+                        return res.json(posts);
+                    });
+
         });
 
 //---------------------------------------

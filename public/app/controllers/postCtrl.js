@@ -9,11 +9,17 @@ angular.module('postCtrl', ['postService'])
                 for(i=0; i < vm.posts.length; i++) {
 
                     if(data[i].date) {
-                        var date = data[i].date;
-                        data[i].date = data[i].date.slice(0,data[i].date.indexOf('T'));
 
+                        var year     = null
+                        var monthDay = null
+
+                        data[i].date = data[i].date.slice(0,data[i].date.indexOf('T'));
                         data[i].date = data[i].date.replace(/-/g, '/');
 
+                        year     = data[i].date.slice(0, 4);
+                        monthDay = data[i].date.slice(5, data[i].date.length);
+
+                        data[i].date = monthDay +'/' + year;
 
                     }
 

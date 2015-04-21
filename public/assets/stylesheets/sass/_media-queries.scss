@@ -1,0 +1,98 @@
+@media screen and (max-width: 1026px) {
+    header {
+        width: 40%;
+        section#top {
+            .content {
+                padding: 25px;
+                #job {
+                    width: 100%;
+                    font-size: 16px;
+                }
+            }
+        }
+
+    }
+    main {
+        margin: 0 0 0 40%;
+        section#posts {
+            padding: 0 0 0 50px;
+            article {
+
+                &:last-child {
+                    float: left;
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 910px) {
+    header {
+        section#top {
+            .content {
+                #name {
+                    font-size: 28px;
+                }
+            }
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        z-index: 200;
+        width: 100%;
+        min-height: 0;
+        height: 60px;
+        position: fixed;
+        text-align: left;
+        background: #fff;
+        border-bottom: solid 1px #eee;
+        section#top {
+            padding: 0;
+            position: static;
+            .overlay {
+                display: none;
+            }
+            .content {
+                margin: 0;
+                padding: 0;
+                img {
+                    width: 57px;
+                    line-height: 60px;
+                    border-radius: 0;
+                    vertical-align: middle;
+                    float: left;
+                    margin: 0 15px 0 0;
+                }
+
+                #name {
+                    margin: 0;
+                    font-size: 16px;
+                    line-height: 60px;
+                    vertical-align: middle;
+                    color: #000;
+                }
+
+                #job {
+                    display: none;
+                }
+            }
+        }
+        section#bottom {
+            display: none;
+        }
+    }
+    main {
+        z-index: 100;
+        margin: 0;
+        padding: 60px 0 0 0;
+        section#posts {
+            margin: 25px auto 0 auto;
+        }
+
+    }
+}

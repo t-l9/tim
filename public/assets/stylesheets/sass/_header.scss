@@ -13,6 +13,7 @@ header {
         bottom: 50%;
         left: 0;
         padding: 25px 50px;
+        overflow: hidden;
         /* background-image: -webkit-gradient(
             linear,
             left top,
@@ -55,17 +56,22 @@ header {
         }
 
         .content {
-            position: relative;
             z-index: 200;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            left: 0;
+            transform: translateY(-50%);
+            padding: 0 85px;
             img {
                 border-radius: 100%;
                 width: 175px;
-                display: block;
+                /* display: block; */
             }
 
             #name, #job, #announcement {
                 color: $white;
-                text-align: left;
+                /* text-align: left; */
                 display: block;
             }
 
@@ -77,12 +83,12 @@ header {
             }
 
             #job {
-                width: 85%;
-                font-size: 20px;
+                font-size: 22px;
                 font-family: $font-serif;
+                text-align: center;
                 /* font-style: italic; */
                 /* color: #000; */
-                /* opacity: .45; */
+                opacity: .65;
             }
 
         }
@@ -97,7 +103,7 @@ header {
         left: 0;
         padding: 25px 50px;
         background: #fff;
-        border-right: solid 1px #eee; 
+        border-right: solid 1px #eee;
 
         .content {
             position: absolute;
