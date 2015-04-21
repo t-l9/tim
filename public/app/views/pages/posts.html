@@ -2,10 +2,11 @@
     <div class="row">
         <article ng-repeat="post in post.posts" class="small-9 large-centered columns">
 
-                <a class="title" href="{{ post.title }}">{{ post.title }}</a>
-                <p ng-bind-html="post.content"></p>
-
+                <h1>
+                    <a class="title" href="{{ post.title }}">{{ post.title }}</a>
+                </h1>
                 <span class="date">{{ post.date }}</span>
+                <p ng-bind-html="post.content"></p>
 
         </article>
     </div>

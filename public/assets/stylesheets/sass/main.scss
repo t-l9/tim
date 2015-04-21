@@ -6,14 +6,14 @@
 
 
 html * {
-    font-family: $font-serif;
+    font-family: 'Times', 'Times New Roman', serif;
     a {
         color: #36bd8e;
         text-decoration: none;
     }
     h1, h2, h3, h4, h5, h6 {
         margin: 0;
-        font-family: $font-sans-serif;
+        font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
     }
     input:focus {
         outline: none;
@@ -21,7 +21,7 @@ html * {
 }
 
 body {
-    background: #fdfdfd;
+    background: #eee;
     input[type="text"] {
         padding: 10px 60px 10px 20px;
         border: none;

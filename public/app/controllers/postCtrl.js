@@ -8,8 +8,13 @@ angular.module('postCtrl', ['postService'])
 
                 for(i=0; i < vm.posts.length; i++) {
 
-                    if(data[i].content) {
-                        data[i].content = data[i].content.nl2br();
+                    if(data[i].date) {
+                        var date = data[i].date;
+                        data[i].date = data[i].date.slice(0,data[i].date.indexOf('T'));
+
+                        data[i].date = data[i].date.replace(/-/g, '/');
+
+
                     }
 
                 };
