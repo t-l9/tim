@@ -138,10 +138,19 @@ main {
       padding: 0 0 0 50px; }
       main section#posts article:last-child {
         float: left; } }
-@media screen and (max-width: 910px) {
-  header section#top .content #name {
-    font-size: 28px; } }
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 910px) {
+  header {
+    /*     z-index: 200;
+    width: 100%;
+    min-height: 0;
+    height: 60px;
+    position: fixed;
+    text-align: left;
+    background: #fff;
+    border-bottom: solid 1px #eee; */ }
+    header section#top .content #name {
+      font-size: 28px; } }
+@media only screen and (max-width: 768px) {
   header {
     z-index: 200;
     width: 100%;
@@ -161,7 +170,6 @@ main {
         padding: 0; }
         header section#top .content img {
           width: 57px;
-          line-height: 60px;
           border-radius: 0;
           vertical-align: middle;
           float: left;
@@ -183,6 +191,9 @@ main {
     padding: 60px 0 0 0; }
     main section#posts {
       margin: 25px auto 0 auto; } }
+/*********************************************
+***             IPHONE 6 PLUS              ***
+*********************************************/
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   header {
     z-index: 200;
@@ -203,7 +214,6 @@ main {
         padding: 0; }
         header section#top .content img {
           width: 57px;
-          line-height: 60px;
           border-radius: 0;
           vertical-align: middle;
           float: left;
@@ -225,6 +235,9 @@ main {
     padding: 60px 0 0 0; }
     main section#posts {
       margin: 25px auto 0 auto; } }
+/*********************************************
+***             END IPHONE 6 PLUS          ***
+*********************************************/
 html * {
   font-family: 'Times', 'Times New Roman', serif; }
   html * a {

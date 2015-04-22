@@ -2,7 +2,8 @@
 @import 'header';
 @import 'main-content';
 @import 'posts';
-@import 'media-queries';
+@import 'media-queries/_main';
+@import 'media-queries/_iphones';
 
 
 html * {
