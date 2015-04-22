@@ -7,6 +7,42 @@
         <input type="text" class="form-control" ng-model="postData.title">
     </div>
 
+
+
+    <script src="http://cdn.quilljs.com/latest/quill.js"></script>
+
+    <!-- Create the toolbar container -->
+<div id="toolbar">
+  <button class="ql-bold">Bold</button>
+  <button class="ql-italic">Italic</button>
+</div>
+
+<!-- Create the editor container -->
+<div id="editor">
+  <div>Hello World!</div>
+</div>
+
+<!-- Include the Quill library -->
+
+
+<!-- Initialize Quill editor -->
+<script>
+  var editor = new Quill('#editor');
+  editor.addModule('toolbar', { container: '#toolbar' });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="form-group">
         <label>Content</label>
         <textarea type="text" class="form-control" ng-model="postData.content">
