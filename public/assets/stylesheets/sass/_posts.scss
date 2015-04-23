@@ -4,11 +4,15 @@
         text-align: left;
         margin: 0 auto 25px auto;
         border-bottom: 1px solid #eee;
-        a.title {
-            font-weight: $bold;
-            font-size: 32px;
-            color: #000;
-            font-family: $font-sans-serif;
+        h1 {
+            margin: 0 0 15px 0;
+            line-height: 38px;
+            a.title {
+                font-weight: $bold;
+                font-size: 32px;
+                color: #000;
+                font-family: $font-sans-serif;
+            }
         }
         p {
             padding: 12px 0;

@@ -2,6 +2,7 @@
 @import 'header';
 @import 'main-content';
 @import 'posts';
+@import '_admin';
 @import 'media-queries/_main';
 @import 'media-queries/_iphone-4';
 @import 'media-queries/_iphone-5';
@@ -24,6 +25,27 @@ html * {
 
 body {
     background: #eee;
+    #content-views {
+        position: relative;
+    }
+
+    .ng-enter, .ng-leave {
+        width:100%;
+        position:absolute;
+    }
+
+    .ng-enter {
+        -webkit-animation:fadeIn .4s both ease-in;
+        -moz-animation:fadeIn .4s both ease-in;
+        animation:fadeIn .4s both ease-in;
+     }
+
+     .ng-leave {
+        -webkit-animation:fadeOut 0.6s both ease-in;
+        -moz-animation:fadeOut 0.6s both ease-in;
+        animation:fadeOut 0.6s both ease-in;
+     }
+
     input[type="text"] {
         padding: 10px 60px 10px 20px;
         border: none;

@@ -62,8 +62,7 @@ header {
       content: '';
       display: inline-block;
       height: 100%;
-      vertical-align: middle;
-      /* margin-right: -0.25em; Adjusts for spacing */ }
+      vertical-align: middle; }
     header #bottom .content {
       display: inline-block;
       vertical-align: middle;
@@ -78,18 +77,22 @@ header {
 main {
   margin: 0 0 0 50%;
   padding: 25px 0 0 0;
-  background: #fdfdfd; }
+  background: #fdfdfd;
+  min-height: 100%; }
 
 #posts article {
   /* background: #eee; */
   text-align: left;
   margin: 0 auto 25px auto;
   border-bottom: 1px solid #eee; }
-  #posts article a.title {
-    font-weight: 700;
-    font-size: 32px;
-    color: #000;
-    font-family: "Helvetica Neue", "Helvetica", sans-serif; }
+  #posts article h1 {
+    margin: 0 0 15px 0;
+    line-height: 38px; }
+    #posts article h1 a.title {
+      font-weight: 700;
+      font-size: 32px;
+      color: #000;
+      font-family: "Helvetica Neue", "Helvetica", sans-serif; }
   #posts article p {
     padding: 12px 0;
     white-space: pre-line; }
@@ -103,6 +106,35 @@ main {
       font-family: inherit; }
   #posts article:last-child {
     border: none; }
+
+section#admin {
+  min-height: 100%;
+  padding: 0 50px; }
+  section#admin h1 {
+    font-weight: bold;
+    margin: 0 0 25px 0; }
+  section#admin form label {
+    font-family: "Helvetica Neue", "Helvetica", sans-serif;
+    font-size: 16px; }
+  section#admin form input, section#admin form textarea {
+    border: none;
+    outline: none;
+    background: #f1f1f1;
+    width: 100%;
+    margin: 0 0 25px 0;
+    font-family: "Helvetica Neue", "Helvetica", sans-serif;
+    font-size: 16px;
+    color: #666;
+    border-radius: 4px; }
+  section#admin form textarea {
+    height: 100px; }
+  section#admin form button {
+    border: none;
+    background: #50c0fc;
+    padding: 10px 25px; }
+    section#admin form button span {
+      color: #fff;
+      font-family: "Helvetica Neue", "Helvetica", sans-serif; }
 
 @media screen and (max-width: 1026px) {
   header {
@@ -318,6 +350,19 @@ html * {
 
 body {
   background: #eee; }
+  body #content-views {
+    position: relative; }
+  body .ng-enter, body .ng-leave {
+    width: 100%;
+    position: absolute; }
+  body .ng-enter {
+    -webkit-animation: fadeIn .4s both ease-in;
+    -moz-animation: fadeIn .4s both ease-in;
+    animation: fadeIn .4s both ease-in; }
+  body .ng-leave {
+    -webkit-animation: fadeOut 0.6s both ease-in;
+    -moz-animation: fadeOut 0.6s both ease-in;
+    animation: fadeOut 0.6s both ease-in; }
   body input[type="text"] {
     padding: 10px 60px 10px 20px;
     border: none;
