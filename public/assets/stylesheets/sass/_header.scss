@@ -13,7 +13,6 @@ header {
         bottom: 50%;
         left: 0;
         padding: 50px 50px 25px 50px;
-        overflow: hidden;
 
         .overlay {
             position: relative;
@@ -81,20 +80,24 @@ header {
         padding: 25px 50px;
         background: #fff;
         border-right: solid 1px #eee;
+        text-align: center;
+        white-space: nowrap;
+        &:before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+            /* margin-right: -0.25em; Adjusts for spacing */
+        }
 
         .content {
-
-
+            display: inline-block;
+            vertical-align: middle;
+            width: 100%;
             p#bummer {
-                font-size: 40px;
+                font-size: 32px;
                 font-family: $font-serif;
                 font-style: italic;
-                display:flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-content: flex-start;
-                align-items: center;
             }
             p {
                 font-family: $font-sans-serif;

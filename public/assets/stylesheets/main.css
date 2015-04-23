@@ -11,8 +11,7 @@ header {
     right: 0;
     bottom: 50%;
     left: 0;
-    padding: 50px 50px 25px 50px;
-    overflow: hidden; }
+    padding: 50px 50px 25px 50px; }
     header #top .overlay {
       position: relative;
       background: rgba(0, 0, 0, 0.3);
@@ -56,19 +55,25 @@ header {
     left: 0;
     padding: 25px 50px;
     background: #fff;
-    border-right: solid 1px #eee; }
-    header #bottom .content p#bummer {
-      font-size: 40px;
-      font-family: "Times", "Times New Roman", serif;
-      font-style: italic;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-content: flex-start;
-      align-items: center; }
-    header #bottom .content p {
-      font-family: "Helvetica Neue", "Helvetica", sans-serif; }
+    border-right: solid 1px #eee;
+    text-align: center;
+    white-space: nowrap; }
+    header #bottom:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      /* margin-right: -0.25em; Adjusts for spacing */ }
+    header #bottom .content {
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%; }
+      header #bottom .content p#bummer {
+        font-size: 32px;
+        font-family: "Times", "Times New Roman", serif;
+        font-style: italic; }
+      header #bottom .content p {
+        font-family: "Helvetica Neue", "Helvetica", sans-serif; }
 
 main {
   margin: 0 0 0 50%;
@@ -109,7 +114,8 @@ main {
     background-image: -ms-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
     background-image: linear-gradient(to bottom, #b9b1b0 0%, #60acca 100%); }
     header section#top {
-      background-image: none; }
+      background-image: none;
+      bottom: 0; }
       header section#top .overlay {
         display: none; }
       header section#top figure {
@@ -164,22 +170,85 @@ main {
           color: #000; }
         header section#top figure figcaption #job {
           display: none; }
-      header section#top .content {
-        margin: 0;
+    header section#bottom {
+      display: none; }
+
+  main {
+    z-index: 100;
+    margin: 0;
+    padding: 60px 0 0 0; }
+    main section#posts {
+      margin: 25px auto 0 auto; } }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  header {
+    z-index: 200;
+    width: 100%;
+    min-height: 0;
+    height: 60px;
+    position: fixed;
+    text-align: left;
+    background: #fff;
+    border-bottom: solid 1px #eee; }
+    header section#top {
+      padding: 0;
+      position: static; }
+      header section#top .overlay {
+        display: none; }
+      header section#top figure {
         padding: 0; }
-        header section#top .content img {
+        header section#top figure img {
           width: 57px;
           border-radius: 0;
           vertical-align: middle;
           float: left;
           margin: 0 15px 0 0; }
-        header section#top .content #name {
+        header section#top figure figcaption #name {
           margin: 0;
           font-size: 16px;
           line-height: 60px;
           vertical-align: middle;
           color: #000; }
-        header section#top .content #job {
+        header section#top figure figcaption #job {
+          display: none; }
+    header section#bottom {
+      display: none; }
+
+  main {
+    z-index: 100;
+    margin: 0;
+    padding: 60px 0 0 0; }
+    main section#posts {
+      margin: 25px auto 0 auto; } }
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  header {
+    z-index: 200;
+    width: 100%;
+    min-height: 0;
+    height: 60px;
+    position: fixed;
+    text-align: left;
+    background: #fff;
+    border-bottom: solid 1px #eee; }
+    header section#top {
+      padding: 0;
+      position: static; }
+      header section#top .overlay {
+        display: none; }
+      header section#top figure {
+        padding: 0; }
+        header section#top figure img {
+          width: 57px;
+          border-radius: 0;
+          vertical-align: middle;
+          float: left;
+          margin: 0 15px 0 0; }
+        header section#top figure figcaption #name {
+          margin: 0;
+          font-size: 16px;
+          line-height: 60px;
+          vertical-align: middle;
+          color: #000; }
+        header section#top figure figcaption #job {
           display: none; }
     header section#bottom {
       display: none; }

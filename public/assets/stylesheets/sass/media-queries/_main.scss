@@ -16,6 +16,7 @@
 
         section#top {
             background-image: none;
+            bottom: 0;
             .overlay { display: none };
             figure {
                 padding: 0 5px;
@@ -114,36 +115,6 @@
                 }
             }
 
-
-
-
-
-
-
-
-            .content {
-                margin: 0;
-                padding: 0;
-                img {
-                    width: 57px;
-                    border-radius: 0;
-                    vertical-align: middle;
-                    float: left;
-                    margin: 0 15px 0 0;
-                }
-
-                #name {
-                    margin: 0;
-                    font-size: 16px;
-                    line-height: 60px;
-                    vertical-align: middle;
-                    color: #000;
-                }
-
-                #job {
-                    display: none;
-                }
-            }
         }
         section#bottom {
             display: none;
