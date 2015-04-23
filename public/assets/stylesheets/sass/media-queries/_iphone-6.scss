@@ -14,6 +14,9 @@
             text-align: left;
             background: #fff;
             border-bottom: solid 1px #eee;
+            #nav-toggle, nav {
+                display: none;
+            }
             section#top {
                 padding: 0;
                 position: static;

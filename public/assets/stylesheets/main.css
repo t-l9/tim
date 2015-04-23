@@ -1,3 +1,28 @@
+nav {
+  position: fixed;
+  left: 0;
+  background: #fff;
+  min-height: 100%;
+  width: 300px;
+  border-right: solid 1px #eee;
+  text-align: center; }
+  nav ul {
+    text-align: left;
+    list-style: none;
+    display: inline-block;
+    margin: 75px 0 0 0;
+    width: 100%; }
+    nav ul li {
+      display: block;
+      font-family: "Helvetica Neue", "Helvetica", sans-serif;
+      font-size: 20px;
+      padding: 10px 0 10px 50px;
+      width: 100%;
+      transition: all 250ms ease-in-out; }
+      nav ul li:hover {
+        background: #50c0fc;
+        color: #fff; }
+
 header {
   width: 50%;
   min-height: 100%;
@@ -6,31 +31,6 @@ header {
   text-align: center;
   left: 0;
   transition: all 250ms ease-in-out; }
-  header nav {
-    position: fixed;
-    z-index: -100;
-    left: 0;
-    background: #fff;
-    min-height: 100%;
-    width: 300px;
-    border-right: solid 1px #eee;
-    text-align: center; }
-    header nav ul {
-      text-align: left;
-      list-style: none;
-      display: inline-block;
-      margin: 75px 0 0 0;
-      width: 100%; }
-      header nav ul li {
-        display: block;
-        font-family: "Helvetica Neue", "Helvetica", sans-serif;
-        font-size: 20px;
-        padding: 10px 0 10px 50px;
-        width: 100%;
-        transition: all 250ms ease-in-out; }
-        header nav ul li:hover {
-          background: #50c0fc;
-          color: #fff; }
   header #nav-toggle {
     position: fixed;
     z-index: 200;
@@ -76,6 +76,7 @@ header {
     background: #fff; }
     header #top .overlay {
       position: relative;
+      z-index: 200;
       background: rgba(0, 0, 0, 0.3);
       background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #b9b1b0), color-stop(1, #60acca));
       background-image: -o-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
@@ -228,6 +229,7 @@ section#admin {
     background-image: linear-gradient(to bottom, #b9b1b0 0%, #60acca 100%); }
     header section#top {
       background-image: none;
+      background: transparent;
       bottom: 0; }
       header section#top .overlay {
         display: none; }
@@ -385,6 +387,8 @@ section#admin {
     text-align: left;
     background: #fff;
     border-bottom: solid 1px #eee; }
+    header #nav-toggle, header nav {
+      display: none; }
     header section#top {
       padding: 0;
       position: static; }
