@@ -3,7 +3,13 @@ header {
   min-height: 100%;
   position: fixed;
   text-align: center;
-  left: 0; }
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #b9b1b0), color-stop(1, #60acca));
+  background-image: -o-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
+  background-image: -moz-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
+  background-image: -webkit-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
+  background-image: -ms-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
+  background-image: linear-gradient(to bottom, #b9b1b0 0%, #60acca 100%); }
   header #top {
     position: absolute;
     z-index: 100;
@@ -27,23 +33,30 @@ header {
     background-image: linear-gradient(to bottom, #b9b1b0 0%, #60acca 100%); */
     /* background: url("../images/flower-bg.png") 0 0 no-repeat;
     background-size: cover;
-     */ }
-    header #top .overlay {
-      position: relative;
-      /* background:rgba(0,0,0,0.3); */
-      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #b9b1b0), color-stop(1, #60acca));
-      background-image: -o-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-      background-image: -moz-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-      background-image: -webkit-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-      background-image: -ms-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-      background-image: linear-gradient(to bottom, #b9b1b0 0%, #60acca 100%);
-      z-index: 200;
-      opacity: .8;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0; }
+     */
+    /* .overlay {
+        position: relative;
+        background:rgba(0,0,0,0.3);
+        background-image: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            color-stop(0, #b9b1b0),
+            color-stop(1, #60acca)
+        );
+        background-image: -o-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
+        background-image: -moz-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
+        background-image: -webkit-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
+        background-image: -ms-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
+        background-image: linear-gradient(to bottom, #b9b1b0 0%, #60acca 100%);
+        z-index: 200;
+        opacity: .8;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    } */ }
     header #top .content {
       z-index: 200;
       position: absolute;
