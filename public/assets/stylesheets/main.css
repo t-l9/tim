@@ -193,47 +193,7 @@ main {
 /*********************************************
 ***             IPHONE 6 PLUS              ***
 *********************************************/
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  header {
-    z-index: 200;
-    width: 100%;
-    min-height: 0;
-    height: 60px;
-    position: fixed;
-    text-align: left;
-    background: #fff;
-    border-bottom: solid 1px #eee; }
-    header section#top {
-      padding: 0;
-      position: static; }
-      header section#top .overlay {
-        display: none; }
-      header section#top figure {
-        padding: 0; }
-        header section#top figure img {
-          width: 57px;
-          border-radius: 0;
-          vertical-align: middle;
-          float: left;
-          margin: 0 15px 0 0; }
-        header section#top figure figcaption #name {
-          margin: 0;
-          font-size: 16px;
-          line-height: 60px;
-          vertical-align: middle;
-          color: #000; }
-        header section#top figure figcaption #job {
-          display: none; }
-    header section#bottom {
-      display: none; }
-
-  main {
-    z-index: 100;
-    margin: 0;
-    padding: 60px 0 0 0; }
-    main section#posts {
-      margin: 25px auto 0 auto; } }
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) {
   header {
     z-index: 200;
     width: 100%;
