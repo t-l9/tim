@@ -3,13 +3,7 @@ header {
   min-height: 100%;
   position: fixed;
   text-align: center;
-  left: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #b9b1b0), color-stop(1, #60acca));
-  background-image: -o-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-  background-image: -moz-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-  background-image: -webkit-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-  background-image: -ms-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-  background-image: linear-gradient(to bottom, #b9b1b0 0%, #60acca 100%); }
+  left: 0; }
   header #top {
     position: absolute;
     z-index: 100;
@@ -17,73 +11,42 @@ header {
     right: 0;
     bottom: 50%;
     left: 0;
-    padding: 25px 50px;
-    overflow: hidden;
-    /* background-image: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #b9b1b0),
-        color-stop(1, #60acca)
-    );
-    background-image: -o-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-    background-image: -moz-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-    background-image: -webkit-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-    background-image: -ms-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-    background-image: linear-gradient(to bottom, #b9b1b0 0%, #60acca 100%); */
-    /* background: url("../images/flower-bg.png") 0 0 no-repeat;
-    background-size: cover;
-     */
-    /* .overlay {
-        position: relative;
-        background:rgba(0,0,0,0.3);
-        background-image: -webkit-gradient(
-            linear,
-            left top,
-            left bottom,
-            color-stop(0, #b9b1b0),
-            color-stop(1, #60acca)
-        );
-        background-image: -o-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-        background-image: -moz-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-        background-image: -webkit-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-        background-image: -ms-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-        background-image: linear-gradient(to bottom, #b9b1b0 0%, #60acca 100%);
-        z-index: 200;
-        opacity: .8;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    } */ }
-    header #top .content {
+    padding: 50px 50px 25px 50px;
+    overflow: hidden; }
+    header #top .overlay {
+      position: relative;
+      background: rgba(0, 0, 0, 0.3);
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #b9b1b0), color-stop(1, #60acca));
+      background-image: -o-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
+      background-image: -moz-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
+      background-image: -webkit-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
+      background-image: -ms-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
+      background-image: linear-gradient(to bottom, #b9b1b0 0%, #60acca 100%);
       z-index: 200;
+      opacity: .8;
       position: absolute;
-      top: 50%;
+      top: 0;
       right: 0;
-      left: 0;
-      transform: translateY(-50%);
-      padding: 0 85px; }
-      header #top .content img {
+      bottom: 0;
+      left: 0; }
+    header #top figure {
+      z-index: 200;
+      position: relative;
+      margin: 0;
+      padding: 0 75px; }
+      header #top figure img {
         border-radius: 100%;
-        width: 175px;
-        /* display: block; */ }
-      header #top .content #name, header #top .content #job, header #top .content #announcement {
-        color: #ffffff;
-        /* text-align: left; */
-        display: block; }
-      header #top .content #name {
-        margin: 25px 0 0 0;
+        width: 150px; }
+      header #top figure figcaption #name, header #top figure figcaption #job, header #top figure figcaption #announcement {
+        color: #ffffff; }
+      header #top figure figcaption #name {
+        margin: 15px 0 0 0;
         font-size: 36px;
         text-transform: uppercase;
         font-weight: 700; }
-      header #top .content #job {
-        font-size: 22px;
+      header #top figure figcaption #job {
+        font-size: 20px;
         font-family: "Times", "Times New Roman", serif;
-        text-align: center;
-        /* font-style: italic; */
-        /* color: #000; */
         opacity: .65; }
   header #bottom {
     position: absolute;
@@ -94,18 +57,18 @@ header {
     padding: 25px 50px;
     background: #fff;
     border-right: solid 1px #eee; }
-    header #bottom .content {
-      position: absolute;
-      top: 50%;
-      right: 0;
-      left: 0;
-      transform: translateY(-50%); }
-      header #bottom .content p#bummer {
-        font-size: 40px;
-        font-family: "Times", "Times New Roman", serif;
-        font-style: italic; }
-      header #bottom .content p {
-        font-family: "Helvetica Neue", "Helvetica", sans-serif; }
+    header #bottom .content p#bummer {
+      font-size: 40px;
+      font-family: "Times", "Times New Roman", serif;
+      font-style: italic;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: flex-start;
+      align-items: center; }
+    header #bottom .content p {
+      font-family: "Helvetica Neue", "Helvetica", sans-serif; }
 
 main {
   margin: 0 0 0 50%;
@@ -138,12 +101,26 @@ main {
 
 @media screen and (max-width: 1026px) {
   header {
-    width: 40%; }
-    header section#top .content {
-      padding: 25px; }
-      header section#top .content #job {
-        width: 100%;
-        font-size: 16px; }
+    width: 40%;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #b9b1b0), color-stop(1, #60acca));
+    background-image: -o-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
+    background-image: -moz-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
+    background-image: -webkit-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
+    background-image: -ms-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
+    background-image: linear-gradient(to bottom, #b9b1b0 0%, #60acca 100%); }
+    header section#top {
+      background-image: none; }
+      header section#top .overlay {
+        display: none; }
+      header section#top figure {
+        padding: 0 5px;
+        margin: 0; }
+        header section#top figure figcaption #name {
+          font-size: 28px; }
+        header section#top figure figcaption #job {
+          font-size: 18px; }
+    header section#bottom {
+      display: none; }
 
   main {
     margin: 0 0 0 40%; }
@@ -152,17 +129,10 @@ main {
       main section#posts article:last-child {
         float: left; } }
 @media only screen and (max-width: 910px) {
-  header {
-    /*     z-index: 200;
-    width: 100%;
-    min-height: 0;
-    height: 60px;
-    position: fixed;
-    text-align: left;
-    background: #fff;
-    border-bottom: solid 1px #eee; */ }
-    header section#top .content #name {
-      font-size: 28px; } }
+  header section#top figure figcaption #name {
+    font-size: 26px; }
+  header section#top figure figcaption #job {
+    font-size: 16px; } }
 @media only screen and (max-width: 768px) {
   header {
     z-index: 200;
@@ -178,6 +148,22 @@ main {
       position: static; }
       header section#top .overlay {
         display: none; }
+      header section#top figure {
+        padding: 0; }
+        header section#top figure img {
+          width: 57px;
+          border-radius: 0;
+          vertical-align: middle;
+          float: left;
+          margin: 0 15px 0 0; }
+        header section#top figure figcaption #name {
+          margin: 0;
+          font-size: 16px;
+          line-height: 60px;
+          vertical-align: middle;
+          color: #000; }
+        header section#top figure figcaption #job {
+          display: none; }
       header section#top .content {
         margin: 0;
         padding: 0; }

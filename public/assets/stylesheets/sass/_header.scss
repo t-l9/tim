@@ -5,19 +5,6 @@ header {
     text-align: center;
     left: 0;
 
-    background-image: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #b9b1b0),
-        color-stop(1, #60acca)
-    );
-    background-image: -o-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-    background-image: -moz-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-    background-image: -webkit-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-    background-image: -ms-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-    background-image: linear-gradient(to bottom, #b9b1b0 0%, #60acca 100%);
-
     #top {
         position: absolute;
         z-index: 100;
@@ -25,26 +12,10 @@ header {
         right: 0;
         bottom: 50%;
         left: 0;
-        padding: 25px 50px;
+        padding: 50px 50px 25px 50px;
         overflow: hidden;
-        /* background-image: -webkit-gradient(
-            linear,
-            left top,
-            left bottom,
-            color-stop(0, #b9b1b0),
-            color-stop(1, #60acca)
-        );
-        background-image: -o-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-        background-image: -moz-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-        background-image: -webkit-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-        background-image: -ms-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-        background-image: linear-gradient(to bottom, #b9b1b0 0%, #60acca 100%); */
 
-        /* background: url("../images/flower-bg.png") 0 0 no-repeat;
-        background-size: cover;
-         */
-
-        /* .overlay {
+        .overlay {
             position: relative;
             background:rgba(0,0,0,0.3);
             background-image: -webkit-gradient(
@@ -66,46 +37,39 @@ header {
             right: 0;
             bottom: 0;
             left: 0;
-        } */
-
-        .content {
-            z-index: 200;
-            position: absolute;
-            top: 50%;
-            right: 0;
-            left: 0;
-            transform: translateY(-50%);
-            padding: 0 85px;
-            img {
-                border-radius: 100%;
-                width: 175px;
-                /* display: block; */
-            }
-
-            #name, #job, #announcement {
-                color: $white;
-                /* text-align: left; */
-                display: block;
-            }
-
-            #name {
-                margin: 25px 0 0 0;
-                font-size: 36px;
-                text-transform: uppercase;
-                font-weight: $bold;
-            }
-
-            #job {
-                font-size: 22px;
-                font-family: $font-serif;
-                text-align: center;
-                /* font-style: italic; */
-                /* color: #000; */
-                opacity: .65;
-            }
-
         }
 
+        figure {
+            z-index: 200;
+            position: relative;
+            margin: 0;
+            padding: 0 75px;
+
+            img {
+                border-radius: 100%;
+                width: 150px;
+            }
+
+            figcaption {
+                #name, #job, #announcement {
+                    color: $white;
+
+                }
+
+                #name {
+                    margin: 15px 0 0 0;
+                    font-size: 36px;
+                    text-transform: uppercase;
+                    font-weight: $bold;
+                }
+
+                #job {
+                    font-size: 20px;
+                    font-family: $font-serif;
+                    opacity: .65;
+                }
+            }
+        }
     }
 
     #bottom {
@@ -119,17 +83,18 @@ header {
         border-right: solid 1px #eee;
 
         .content {
-            position: absolute;
-            top: 50%;
-            right: 0;
-            left: 0;
-            transform: translateY(-50%);
 
 
             p#bummer {
                 font-size: 40px;
                 font-family: $font-serif;
                 font-style: italic;
+                display:flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: flex-start;
+                align-items: center;
             }
             p {
                 font-family: $font-sans-serif;
