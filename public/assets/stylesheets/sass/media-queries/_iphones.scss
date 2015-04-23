@@ -21,8 +21,8 @@
                 .overlay {
                     display: none;
                 }
-                .content {
-                    margin: 0;
+
+                figure {
                     padding: 0;
                     img {
                         width: 57px;
@@ -31,19 +31,21 @@
                         float: left;
                         margin: 0 15px 0 0;
                     }
+                    figcaption {
+                        #name {
+                            margin: 0;
+                            font-size: 16px;
+                            line-height: 60px;
+                            vertical-align: middle;
+                            color: #000;
+                        }
+                        #job {
+                            display: none;
+                        }
 
-                    #name {
-                        margin: 0;
-                        font-size: 16px;
-                        line-height: 60px;
-                        vertical-align: middle;
-                        color: #000;
-                    }
-
-                    #job {
-                        display: none;
                     }
                 }
+
             }
             section#bottom {
                 display: none;
@@ -66,7 +68,7 @@
     and (orientation : landscape)
     and (-webkit-min-device-pixel-ratio : 2) {
 
-        
+
 }
 /*********************************************
 ***             END IPHONE 6 PLUS          ***

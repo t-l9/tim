@@ -208,22 +208,21 @@ main {
       position: static; }
       header section#top .overlay {
         display: none; }
-      header section#top .content {
-        margin: 0;
+      header section#top figure {
         padding: 0; }
-        header section#top .content img {
+        header section#top figure img {
           width: 57px;
           border-radius: 0;
           vertical-align: middle;
           float: left;
           margin: 0 15px 0 0; }
-        header section#top .content #name {
+        header section#top figure figcaption #name {
           margin: 0;
           font-size: 16px;
           line-height: 60px;
           vertical-align: middle;
           color: #000; }
-        header section#top .content #job {
+        header section#top figure figcaption #job {
           display: none; }
     header section#bottom {
       display: none; }
