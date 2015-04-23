@@ -193,7 +193,7 @@ main {
 /*********************************************
 ***             IPHONE 6 PLUS              ***
 *********************************************/
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   header {
     z-index: 200;
     width: 100%;
