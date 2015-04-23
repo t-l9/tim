@@ -3,4 +3,19 @@ main {
     padding: 25px 0 0 0;
     background: #fdfdfd;
     min-height: 100%;
+    #content-overlay {
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 50%;
+        background: #000;
+        opacity: 0.6;
+        transition: all 300ms ease-in-out;
+        visibility: hidden;
+    }
+    #content-overlay.active {
+        visibility: visible;
+    }
 }

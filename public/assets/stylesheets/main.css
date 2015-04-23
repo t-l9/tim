@@ -2,8 +2,69 @@ header {
   width: 50%;
   min-height: 100%;
   position: fixed;
+  z-index: 200;
   text-align: center;
-  left: 0; }
+  left: 0;
+  transition: all 250ms ease-in-out; }
+  header nav {
+    position: fixed;
+    z-index: -100;
+    left: 0;
+    background: #fff;
+    min-height: 100%;
+    width: 300px;
+    border-right: solid 1px #eee;
+    text-align: center; }
+    header nav ul {
+      text-align: left;
+      list-style: none;
+      display: inline-block;
+      margin: 75px 0 0 0;
+      width: 100%; }
+      header nav ul li {
+        display: block;
+        font-family: "Helvetica Neue", "Helvetica", sans-serif;
+        font-size: 20px;
+        padding: 10px 0 10px 50px;
+        width: 100%;
+        transition: all 250ms ease-in-out; }
+        header nav ul li:hover {
+          background: #50c0fc;
+          color: #fff; }
+  header #nav-toggle {
+    position: fixed;
+    z-index: 200;
+    top: 35px;
+    left: 25px;
+    display: block; }
+  header #nav-toggle span, header #nav-toggle span:before, header #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: #fff;
+    position: absolute;
+    display: block;
+    content: ''; }
+  header #nav-toggle span:before {
+    top: -10px; }
+  header #nav-toggle span:after {
+    bottom: -10px; }
+  header #nav-toggle span, header #nav-toggle span:before, header #nav-toggle span:after {
+    transition: all 250ms ease-in-out; }
+  header #nav-toggle.active span {
+    background-color: transparent; }
+  header #nav-toggle.active span:before, header #nav-toggle.active span:after {
+    top: 0;
+    background-color: #000; }
+  header #nav-toggle.active span:before {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg); }
+  header #nav-toggle.active span:after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg); }
   header #top {
     position: absolute;
     z-index: 100;
@@ -11,7 +72,8 @@ header {
     right: 0;
     bottom: 50%;
     left: 0;
-    padding: 50px 50px 25px 50px; }
+    padding: 50px 50px 25px 50px;
+    background: #fff; }
     header #top .overlay {
       position: relative;
       background: rgba(0, 0, 0, 0.3);
@@ -43,12 +105,16 @@ header {
         font-size: 36px;
         text-transform: uppercase;
         font-weight: 700; }
+        header #top figure figcaption #name a {
+          color: #fff;
+          font-family: "Helvetica Neue", "Helvetica", sans-serif; }
       header #top figure figcaption #job {
         font-size: 20px;
         font-family: "Times", "Times New Roman", serif;
         opacity: .65; }
   header #bottom {
     position: absolute;
+    z-index: 200;
     top: 50%;
     right: 0;
     bottom: 0;
@@ -73,12 +139,27 @@ header {
         font-style: italic; }
       header #bottom .content p {
         font-family: "Helvetica Neue", "Helvetica", sans-serif; }
+  header.active {
+    left: 300px !important; }
 
 main {
   margin: 0 0 0 50%;
   padding: 25px 0 0 0;
   background: #fdfdfd;
   min-height: 100%; }
+  main #content-overlay {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    background: #000;
+    opacity: 0.6;
+    transition: all 300ms ease-in-out;
+    visibility: hidden; }
+  main #content-overlay.active {
+    visibility: visible; }
 
 #posts article {
   /* background: #eee; */
@@ -360,9 +441,9 @@ body {
     -moz-animation: fadeIn .4s both ease-in;
     animation: fadeIn .4s both ease-in; }
   body .ng-leave {
-    -webkit-animation: fadeOut 0.6s both ease-in;
-    -moz-animation: fadeOut 0.6s both ease-in;
-    animation: fadeOut 0.6s both ease-in; }
+    -webkit-animation: fadeOut 0.25s both ease-in;
+    -moz-animation: fadeOut 0.25s both ease-in;
+    animation: fadeOut 0.25s both ease-in; }
   body input[type="text"] {
     padding: 10px 60px 10px 20px;
     border: none;

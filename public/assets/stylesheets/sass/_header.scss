@@ -2,8 +2,89 @@ header {
     width: 50%;
     min-height: 100%;
     position: fixed;
+    z-index: 200;
     text-align: center;
     left: 0;
+    transition: all 250ms ease-in-out;
+
+    nav {
+        position: fixed;
+        z-index: -100;
+        left: 0;
+        background: #fff;
+        min-height: 100%;
+        width: 300px;
+        border-right: solid 1px #eee;
+        text-align: center;
+        ul {
+            text-align: left;
+            list-style: none;
+            display: inline-block;
+            margin: 75px 0 0 0;
+            width: 100%;
+            li {
+                display: block;
+                font-family: $font-sans-serif;
+                font-size: 20px;
+                padding: 10px 0 10px 50px;
+                width: 100%;
+                transition: all 250ms ease-in-out;
+                &:hover {
+                    background: #50c0fc;
+                    color: #fff;
+                }
+            }
+
+        }
+    }
+
+    #nav-toggle {
+        position: fixed;
+        z-index: 200;
+        top: 35px;
+        left: 25px;
+        display: block;
+    }
+
+    #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+        cursor: pointer;
+        border-radius: 1px;
+        height: 5px;
+        width: 35px;
+        background: #fff;
+        position: absolute;
+        display: block;
+        content: '';
+    }
+
+    #nav-toggle span:before {
+        top: -10px;
+    }
+
+    #nav-toggle span:after {
+        bottom: -10px;
+    }
+
+    #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+        transition: all 250ms ease-in-out;
+    }
+    #nav-toggle.active span {
+        background-color: transparent;
+    }
+    #nav-toggle.active span:before, #nav-toggle.active span:after {
+        top: 0;
+        background-color: #000;
+    }
+    #nav-toggle.active span:before {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+    }
+    #nav-toggle.active span:after {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+    }
 
     #top {
         position: absolute;
@@ -13,6 +94,7 @@ header {
         bottom: 50%;
         left: 0;
         padding: 50px 50px 25px 50px;
+        background: #fff;
 
         .overlay {
             position: relative;
@@ -60,6 +142,10 @@ header {
                     font-size: 36px;
                     text-transform: uppercase;
                     font-weight: $bold;
+                    a {
+                        color: #fff;
+                        font-family: $font-sans-serif;
+                    }
                 }
 
                 #job {
@@ -73,6 +159,7 @@ header {
 
     #bottom {
         position: absolute;
+        z-index: 200;
         top: 50%;
         right: 0;
         bottom: 0;
@@ -102,5 +189,8 @@ header {
                 font-family: $font-sans-serif;
             }
         }
+    }
+    &.active {
+        left: 300px !important;
     }
 }
