@@ -157,11 +157,10 @@ main {
     left: 0;
     margin: 0 0 0 50%;
     background: #000;
-    opacity: 0.6;
-    transition: all 300ms ease-in-out;
-    visibility: hidden; }
+    opacity: 0;
+    transition: all 400ms ease-in-out; }
   main #content-overlay.active {
-    visibility: visible; }
+    opacity: 0.6; }
 
 #posts {
   padding: 0 50px; }
@@ -251,6 +250,8 @@ section#admin {
 
   main {
     margin: 0 0 0 40%; }
+    main #content-overlay {
+      margin: 0 0 0 40%; }
     main section#posts {
       padding: 0 0 0 50px; }
       main section#posts article:last-child {
