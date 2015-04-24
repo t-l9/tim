@@ -262,6 +262,9 @@ section#admin {
   header section#top figure figcaption #job {
     font-size: 16px; } }
 @media only screen and (max-width: 768px) {
+  #nav-toggle, nav {
+    display: none; }
+
   header {
     z-index: 200;
     width: 100%;
@@ -394,8 +397,6 @@ section#admin {
     text-align: left;
     background: #fff;
     border-bottom: solid 1px #eee; }
-    header #nav-toggle, header nav {
-      display: none; }
     header section#top {
       padding: 0;
       position: static; }
