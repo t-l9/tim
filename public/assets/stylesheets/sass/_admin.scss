@@ -10,6 +10,10 @@ section#admin {
             font-family: $font-sans-serif;
             font-size: 16px;
         }
+        input[type="password"] {
+            padding: 10px 20px;
+        }
+
         input, textarea {
             border: none;
             outline: none;

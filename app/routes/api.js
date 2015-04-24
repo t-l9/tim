@@ -1,4 +1,6 @@
 var Post = require('../models/post');
+var User = require('../models/user');
+var jwt  = require('jsonwebtoken');
 
 module.exports = function(app, express) {
 
@@ -52,6 +54,7 @@ module.exports = function(app, express) {
                 return res.json(post)
             })
         });
+
 
     return apiRouter;
 

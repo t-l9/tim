@@ -202,6 +202,8 @@ section#admin {
   section#admin form label {
     font-family: "Helvetica Neue", "Helvetica", sans-serif;
     font-size: 16px; }
+  section#admin form input[type="password"] {
+    padding: 10px 20px; }
   section#admin form input, section#admin form textarea {
     border: none;
     outline: none;
