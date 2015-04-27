@@ -113,6 +113,13 @@ header {
         font-size: 20px;
         font-family: "Times", "Times New Roman", serif;
         opacity: .65; }
+      header #top figure figcaption #title {
+        display: none;
+        font-size: 20px;
+        font-family: "Times", "Times New Roman", serif;
+        opacity: .65;
+        color: #fff;
+        margin: 0; }
   header #bottom {
     position: absolute;
     z-index: 200;
@@ -266,35 +273,37 @@ section#admin {
     display: none; }
 
   header {
-    z-index: 200;
     width: 100%;
-    min-height: 0;
-    height: 60px;
-    position: fixed;
-    text-align: left;
-    background: #fff;
-    border-bottom: solid 1px #eee; }
+    min-height: 100px;
+    position: static; }
     header section#top {
       padding: 0;
       position: static; }
       header section#top .overlay {
-        display: none; }
+        /* display: none; */ }
       header section#top figure {
-        padding: 0; }
+        padding: 25px 0; }
         header section#top figure img {
-          width: 57px;
+          /* width: 57px;
           border-radius: 0;
           vertical-align: middle;
           float: left;
-          margin: 0 15px 0 0; }
-        header section#top figure figcaption #name {
-          margin: 0;
-          font-size: 16px;
-          line-height: 60px;
-          vertical-align: middle;
-          color: #000; }
-        header section#top figure figcaption #job {
-          display: none; }
+          margin: 0 15px 0 0; */ }
+        header section#top figure figcaption {
+          padding: 0 25%; }
+          header section#top figure figcaption #name {
+            margin: 15px 0 0 0;
+            font-size: 16px;
+            line-height: 60px;
+            vertical-align: middle;
+            color: #000;
+            line-height: 25px; }
+          header section#top figure figcaption #job {
+            /* display: block;; */ }
+          header section#top figure figcaption #title {
+            display: none;
+            font-size: 16px;
+            font-style: italic; }
     header section#bottom {
       display: none; }
 
@@ -309,13 +318,9 @@ section#admin {
     display: none; }
 
   header {
-    z-index: 200;
     width: 100%;
-    min-height: 0;
-    height: 60px;
-    position: fixed;
-    text-align: left;
-    background: #fff;
+    min-height: 100px;
+    position: static;
     border-bottom: solid 1px #eee; }
     header section#top {
       padding: 0;
@@ -323,21 +328,20 @@ section#admin {
       header section#top .overlay {
         display: none; }
       header section#top figure {
-        padding: 0; }
-        header section#top figure img {
-          width: 57px;
-          border-radius: 0;
-          vertical-align: middle;
-          float: left;
-          margin: 0 15px 0 0; }
+        padding: 25px 0; }
         header section#top figure figcaption #name {
-          margin: 0;
+          margin: 15px 0 0 0;
           font-size: 16px;
           line-height: 60px;
           vertical-align: middle;
-          color: #000; }
+          color: #000;
+          line-height: 25px; }
         header section#top figure figcaption #job {
           display: none; }
+        header section#top figure figcaption #title {
+          display: block;
+          font-size: 16px;
+          font-style: italic; }
     header section#bottom {
       display: none; }
 
@@ -352,35 +356,29 @@ section#admin {
     display: none; }
 
   header {
-    z-index: 200;
     width: 100%;
-    min-height: 0;
-    height: 60px;
-    position: fixed;
-    text-align: left;
-    background: #fff;
-    border-bottom: solid 1px #eee; }
+    min-height: 100px;
+    position: static; }
     header section#top {
       padding: 0;
       position: static; }
       header section#top .overlay {
         display: none; }
       header section#top figure {
-        padding: 0; }
-        header section#top figure img {
-          width: 57px;
-          border-radius: 0;
-          vertical-align: middle;
-          float: left;
-          margin: 0 15px 0 0; }
+        padding: 25px 0; }
         header section#top figure figcaption #name {
-          margin: 0;
+          margin: 15px 0 0 0;
           font-size: 16px;
           line-height: 60px;
           vertical-align: middle;
-          color: #000; }
+          color: #000;
+          line-height: 25px; }
         header section#top figure figcaption #job {
           display: none; }
+        header section#top figure figcaption #title {
+          display: block;
+          font-size: 16px;
+          font-style: italic; }
     header section#bottom {
       display: none; }
 
@@ -398,35 +396,29 @@ section#admin {
     display: none; }
 
   header {
-    z-index: 200;
     width: 100%;
-    min-height: 0;
-    height: 60px;
-    position: fixed;
-    text-align: left;
-    background: #fff;
-    border-bottom: solid 1px #eee; }
+    min-height: 100px;
+    position: static; }
     header section#top {
       padding: 0;
       position: static; }
       header section#top .overlay {
         display: none; }
       header section#top figure {
-        padding: 0; }
-        header section#top figure img {
-          width: 57px;
-          border-radius: 0;
-          vertical-align: middle;
-          float: left;
-          margin: 0 15px 0 0; }
+        padding: 25px 0; }
         header section#top figure figcaption #name {
-          margin: 0;
+          margin: 15px 0 0 0;
           font-size: 16px;
           line-height: 60px;
           vertical-align: middle;
-          color: #000; }
+          color: #000;
+          line-height: 25px; }
         header section#top figure figcaption #job {
           display: none; }
+        header section#top figure figcaption #title {
+          display: block;
+          font-size: 16px;
+          font-style: italic; }
     header section#bottom {
       display: none; }
 

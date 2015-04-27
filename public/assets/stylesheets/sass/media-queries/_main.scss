@@ -83,42 +83,43 @@
         display: none;
     }
     header {
-        z-index: 200;
         width: 100%;
-        min-height: 0;
-        height: 60px;
-        position: fixed;
-        text-align: left;
-        background: #fff;
-        border-bottom: solid 1px #eee;
+        min-height: 100px;
+        position: static;
         section#top {
             padding: 0;
             position: static;
             .overlay {
-                display: none;
+                /* display: none; */
             }
 
             figure {
-                padding: 0;
+                padding: 25px 0;
                 img {
-                    width: 57px;
+                    /* width: 57px;
                     border-radius: 0;
                     vertical-align: middle;
                     float: left;
-                    margin: 0 15px 0 0;
+                    margin: 0 15px 0 0; */
                 }
                 figcaption {
+                    padding: 0 25%;
                     #name {
-                        margin: 0;
+                        margin: 15px 0 0 0;
                         font-size: 16px;
                         line-height: 60px;
                         vertical-align: middle;
                         color: #000;
+                        line-height: 25px;
                     }
                     #job {
-                        display: none;
+                        /* display: block;; */
                     }
-
+                    #title {
+                        display: none;
+                        font-size: 16px;
+                        font-style: italic;
+                    }
                 }
             }
 

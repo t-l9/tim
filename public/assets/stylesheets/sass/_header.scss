@@ -1,6 +1,6 @@
 nav {
     position: fixed;
-    
+
     left: 0;
     background: #fff;
     min-height: 100%;
@@ -153,6 +153,15 @@ header {
                     font-size: 20px;
                     font-family: $font-serif;
                     opacity: .65;
+                }
+
+                #title {
+                    display: none;
+                    font-size: 20px;
+                    font-family: $font-serif;
+                    opacity: .65;
+                    color: #fff;
+                    margin: 0;
                 }
             }
         }
