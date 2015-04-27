@@ -16,6 +16,7 @@
     "morgan": "^1.5.2",
     "nl2br": "0.0.3",
     "passport": "^0.2.1",
+    "quick-login": "0.0.1",
     "quill": "^0.19.10",
     "serve-favicon": "~2.2.0"
   },

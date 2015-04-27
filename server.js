@@ -46,6 +46,15 @@ var apiRouter = require('./app/routes/api')(app, express);
 app.use('/api', apiRouter);
 
 //---------------------------------------
+//  basic auth
+//---------------------------------------
+app.get('/admin', require('quick-login')(function checkAuth(data, next){
+  next(null, data.name === 'timlauter' &&
+    data.pass === 'moes-tavern')
+}))
+
+
+//---------------------------------------
 //  catchall requests not handles by node
 //---------------------------------------
 app.get('*', function(req, res) {
