@@ -32,39 +32,65 @@ header {
           background: #50c0fc;
           color: #fff; }
   header #nav-toggle {
+    width: 60px;
+    height: 45px;
     position: fixed;
-    z-index: 200;
-    top: 35px;
+    top: 15px;
     left: 25px;
-    display: block; }
-  header #nav-toggle span, header #nav-toggle span:before, header #nav-toggle span:after {
-    cursor: pointer;
-    border-radius: 1px;
-    height: 5px;
-    width: 35px;
-    background: #fff;
-    position: absolute;
+    z-index: 200;
+    margin: 10px auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer; }
+  header #nav-toggle span {
     display: block;
-    content: ''; }
-  header #nav-toggle span:before {
-    top: -10px; }
-  header #nav-toggle span:after {
-    bottom: -10px; }
-  header #nav-toggle span, header #nav-toggle span:before, header #nav-toggle span:after {
-    transition: all 250ms ease-in-out; }
+    position: absolute;
+    height: 5px;
+    width: 30px;
+    background: #fff;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out; }
+  header #nav-toggle span:nth-child(1) {
+    top: 8px; }
+  header #nav-toggle span:nth-child(2) {
+    top: 18px; }
+  header #nav-toggle span:nth-child(3) {
+    top: 28px; }
   header #nav-toggle.active span {
-    background-color: transparent; }
-  header #nav-toggle.active span:before, header #nav-toggle.active span:after {
-    top: 0;
-    background-color: #000; }
-  header #nav-toggle.active span:before {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg); }
-  header #nav-toggle.active span:after {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg); }
+    background: #000; }
+  header #nav-toggle.active span:nth-child(1) {
+    top: 18px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg); }
+  header #nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg); }
+  header #nav-toggle.active span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg); }
   header #top {
     position: absolute;
     z-index: 100;
