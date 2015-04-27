@@ -5,23 +5,35 @@
     and (max-device-width: 640px),
     only screen and (max-device-width: 667px),
     only screen and (max-width: 480px){
-        #nav-toggle, nav {
+        /* #nav-toggle, nav {
             display: none;
-        }
+        } */
         header {
             width: 100%;
             min-height: 100px;
             position: static;
+            nav {
+                z-index: -1;
+                top: 0;
+                right: 0;
+                bottom: 150px;
+                left: -300px;
+            }
+            a#nav-toggle {
+                z-index:1000;
+            }
             section#top {
                 padding: 0;
                 position: static;
                 .overlay {
                     display: none;
                 }
+
                 figure {
                     padding: 25px 0;
                     img {}
                     figcaption {
+                        padding: 0 25%;
                         #name {
                             margin: 15px 0 0 0;
                             font-size: 16px;
@@ -38,7 +50,6 @@
                             font-size: 16px;
                             font-style: italic;
                         }
-
                     }
                 }
 
@@ -46,13 +57,28 @@
             section#bottom {
                 display: none;
             }
+            &.active {
+                /* margin-right: -40%; */
+                nav {
+                    z-index: 900;
+                    left: 0;
+                }
+            }
         }
         main {
-            z-index: 100;
+            #content-overlay {
+                margin: 0;
+            }
+            z-index: 500;
+            position: relative;
             margin: 0;
             padding: 60px 0 0 0;
             section#posts {
                 margin: 25px auto 0 auto;
+            }
+            &.active {
+                /* margin-right: -40%; */
+                /* z-index: 1; */
             }
 
         }

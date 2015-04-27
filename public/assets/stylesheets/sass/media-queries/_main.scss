@@ -18,7 +18,7 @@
             background-image: none;
             background: transparent;
             bottom: 0;
-            .overlay { display: none };
+            .overlay { opacity: 1; }
             figure {
                 padding: 0 5px;
                 margin: 0;
@@ -63,7 +63,6 @@
     header {
         section#top {
             figure {
-
                 figcaption {
                     #name {
                         font-size: 26px;
@@ -79,29 +78,30 @@
 }
 
 @media only screen and (max-width: 768px) {
-    #nav-toggle, nav {
-        display: none;
-    }
     header {
         width: 100%;
         min-height: 100px;
         position: static;
+        nav {
+            z-index: -1;
+            top: 0;
+            right: 0;
+            bottom: 150px;
+            left: -300px;
+        }
+        a#nav-toggle {
+            z-index:1000;
+        }
         section#top {
             padding: 0;
             position: static;
             .overlay {
-                /* display: none; */
+                display: none;
             }
 
             figure {
                 padding: 25px 0;
-                img {
-                    /* width: 57px;
-                    border-radius: 0;
-                    vertical-align: middle;
-                    float: left;
-                    margin: 0 15px 0 0; */
-                }
+                img {}
                 figcaption {
                     padding: 0 25%;
                     #name {
@@ -113,7 +113,7 @@
                         line-height: 25px;
                     }
                     #job {
-                        /* display: block;; */
+
                     }
                     #title {
                         display: none;
@@ -127,13 +127,28 @@
         section#bottom {
             display: none;
         }
+        &.active {
+            /* margin-right: -40%; */
+            nav {
+                z-index: 900;
+                left: 0;
+            }
+        }
     }
     main {
-        z-index: 100;
+        #content-overlay {
+            margin: 0;
+        }
+        z-index: 500;
+        position: relative;
         margin: 0;
         padding: 60px 0 0 0;
         section#posts {
             margin: 25px auto 0 auto;
+        }
+        &.active {
+            /* margin-right: -40%; */
+            /* z-index: 1; */
         }
 
     }

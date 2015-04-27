@@ -13,6 +13,7 @@
 
             document.querySelector('header').classList.toggle('active');
             document.getElementById('content-overlay').classList.toggle('active');
+            document.querySelector('main').classList.toggle('active');
         });
 
 
