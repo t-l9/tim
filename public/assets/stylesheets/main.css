@@ -305,6 +305,9 @@ section#admin {
     main section#posts {
       margin: 25px auto 0 auto; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #nav-toggle, nav {
+    display: none; }
+
   header {
     z-index: 200;
     width: 100%;
@@ -345,6 +348,9 @@ section#admin {
     main section#posts {
       margin: 25px auto 0 auto; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  #nav-toggle, nav {
+    display: none; }
+
   header {
     z-index: 200;
     width: 100%;
@@ -388,6 +394,9 @@ section#admin {
 ***             IPHONE 6 PLUS              ***
 *********************************************/
 @media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) {
+  #nav-toggle, nav {
+    display: none; }
+
   header {
     z-index: 200;
     width: 100%;
