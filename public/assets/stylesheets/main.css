@@ -361,9 +361,25 @@ section#admin {
       top: 0;
       right: 0;
       bottom: 150px;
-      left: -300px; }
+      left: -60%;
+      width: 60%; }
+      header nav ul {
+        margin-top: 100px; }
+        header nav ul li {
+          font-size: 38px;
+          padding-bottom: 25px;
+          padding-left: 150px; }
     header a#nav-toggle {
       z-index: 1000; }
+      header a#nav-toggle span {
+        height: 10px;
+        width: 60px; }
+        header a#nav-toggle span:nth-child(1) {
+          top: 0; }
+        header a#nav-toggle span:nth-child(2) {
+          top: 18px; }
+        header a#nav-toggle span:nth-child(3) {
+          top: 36px; }
     header section#top {
       padding: 0;
       position: static; }
@@ -376,17 +392,17 @@ section#admin {
         header section#top figure figcaption {
           padding: 0 25%; }
           header section#top figure figcaption #name {
-            margin: 15px 0 0 0;
-            font-size: 16px;
+            margin: 25px 0 5px 0;
+            font-size: 32px;
             line-height: 60px;
             vertical-align: middle;
             color: #000;
             line-height: 25px; }
           header section#top figure figcaption #job {
-            /* display: block;; */ }
+            display: none; }
           header section#top figure figcaption #title {
             display: block;
-            font-size: 16px;
+            font-size: 30px;
             font-style: italic; }
     header section#bottom {
       display: none; }
@@ -421,9 +437,25 @@ section#admin {
       top: 0;
       right: 0;
       bottom: 150px;
-      left: -300px; }
+      left: -60%;
+      width: 60%; }
+      header nav ul {
+        margin-top: 100px; }
+        header nav ul li {
+          font-size: 38px;
+          padding-bottom: 25px;
+          padding-left: 150px; }
     header a#nav-toggle {
       z-index: 1000; }
+      header a#nav-toggle span {
+        height: 10px;
+        width: 60px; }
+        header a#nav-toggle span:nth-child(1) {
+          top: 0; }
+        header a#nav-toggle span:nth-child(2) {
+          top: 18px; }
+        header a#nav-toggle span:nth-child(3) {
+          top: 36px; }
     header section#top {
       padding: 0;
       position: static; }
@@ -436,17 +468,17 @@ section#admin {
         header section#top figure figcaption {
           padding: 0 25%; }
           header section#top figure figcaption #name {
-            margin: 15px 0 0 0;
-            font-size: 16px;
+            margin: 25px 0 5px 0;
+            font-size: 32px;
             line-height: 60px;
             vertical-align: middle;
             color: #000;
             line-height: 25px; }
           header section#top figure figcaption #job {
-            /* display: block;; */ }
+            display: none; }
           header section#top figure figcaption #title {
             display: block;
-            font-size: 16px;
+            font-size: 30px;
             font-style: italic; }
     header section#bottom {
       display: none; }
@@ -484,9 +516,25 @@ section#admin {
       top: 0;
       right: 0;
       bottom: 150px;
-      left: -300px; }
+      left: -60%;
+      width: 60%; }
+      header nav ul {
+        margin-top: 100px; }
+        header nav ul li {
+          font-size: 38px;
+          padding-bottom: 25px;
+          padding-left: 150px; }
     header a#nav-toggle {
       z-index: 1000; }
+      header a#nav-toggle span {
+        height: 10px;
+        width: 60px; }
+        header a#nav-toggle span:nth-child(1) {
+          top: 0; }
+        header a#nav-toggle span:nth-child(2) {
+          top: 18px; }
+        header a#nav-toggle span:nth-child(3) {
+          top: 36px; }
     header section#top {
       padding: 0;
       position: static; }
@@ -499,8 +547,8 @@ section#admin {
         header section#top figure figcaption {
           padding: 0 25%; }
           header section#top figure figcaption #name {
-            margin: 15px 0 0 0;
-            font-size: 16px;
+            margin: 25px 0 5px 0;
+            font-size: 32px;
             line-height: 60px;
             vertical-align: middle;
             color: #000;
@@ -509,7 +557,7 @@ section#admin {
             display: none; }
           header section#top figure figcaption #title {
             display: block;
-            font-size: 16px;
+            font-size: 30px;
             font-style: italic; }
     header section#bottom {
       display: none; }
