@@ -27,7 +27,7 @@ and (max-device-width : 480px) {
 
             figure {
                 padding: 25px 0;
-                img {}
+                img { width: inherit; }
                 figcaption {
                     padding: 0 25%;
                     #name {
