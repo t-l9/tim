@@ -11,11 +11,11 @@ angular.module('app.routes', ['ngRoute'])
 			controllerAs: 'post'
 		})
 
-		// .when('/:user_id', {
-		// 	templateUrl: 'app/views/pages/postSingle.html',
-		// 	controller: 'postController',
-		// 	controllerAs: 'post'
-		// })
+		.when('/posts/:post_id', {
+			templateUrl: 'app/views/pages/postSingle.html',
+			controller: 'postController',
+			controllerAs: 'post'
+		})
 		//
 		// login page
 
@@ -33,6 +33,10 @@ angular.module('app.routes', ['ngRoute'])
 			templateUrl: 'app/views/pages/login.html',
 			controller: 'postController',
 			controllerAs: 'post'
+		})
+
+		.when('/about', {
+			templateUrl: 'app/views/pages/about.html'
 		})
 
 		.otherwise({

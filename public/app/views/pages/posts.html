@@ -3,7 +3,7 @@
         <article ng-repeat="post in post.posts" class="small-11 large-centered columns">
 
                 <h1>
-                    <a class="title" href="{{ post.title }}">{{ post.title }}</a>
+                    <a href="/posts/{{ post._id }}" class="title">{{ post.title }}</a>
                 </h1>
                 <span class="date"><span class="published">Published on: </span>{{ post.date }}</span>
                 <p ng-bind-html="post.content"></p>

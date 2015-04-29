@@ -11,7 +11,7 @@ header {
         position: fixed;
 
         left: 0;
-        background: #fff;
+        background: #fefefe;
         min-height: 100%;
         width: 300px;
         border-right: solid 1px #eee;
@@ -25,14 +25,21 @@ header {
             width: 100%;
             li {
                 display: block;
-                font-family: $font-sans-serif;
-                font-size: 20px;
-                padding: 10px 0 10px 50px;
                 width: 100%;
-                transition: all 250ms ease-in-out;
-                &:hover {
-                    background: #50c0fc;
-                    color: #fff;
+                a {
+                    font-family: $font-sans-serif;
+                    font-size: 20px;
+                    display: block;
+                    width: 100%;
+                    padding: 15px 0 15px 50px;
+                    transition: all 250ms ease-in-out;
+                    &:hover {
+                        color: #fff !important;
+                        background: #19B5FE;
+                    }
+                    &:visited {
+                        color: #000;
+                    }
                 }
             }
 

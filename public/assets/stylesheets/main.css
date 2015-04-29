@@ -9,7 +9,7 @@ header {
   header nav {
     position: fixed;
     left: 0;
-    background: #fff;
+    background: #fefefe;
     min-height: 100%;
     width: 300px;
     border-right: solid 1px #eee;
@@ -23,14 +23,19 @@ header {
       width: 100%; }
       header nav ul li {
         display: block;
-        font-family: "Helvetica Neue", "Helvetica", sans-serif;
-        font-size: 20px;
-        padding: 10px 0 10px 50px;
-        width: 100%;
-        transition: all 250ms ease-in-out; }
-        header nav ul li:hover {
-          background: #50c0fc;
-          color: #fff; }
+        width: 100%; }
+        header nav ul li a {
+          font-family: "Helvetica Neue", "Helvetica", sans-serif;
+          font-size: 20px;
+          display: block;
+          width: 100%;
+          padding: 15px 0 15px 50px;
+          transition: all 250ms ease-in-out; }
+          header nav ul li a:hover {
+            color: #fff !important;
+            background: #19B5FE; }
+          header nav ul li a:visited {
+            color: #000; }
   header #nav-toggle {
     width: 60px;
     height: 45px;
@@ -184,7 +189,7 @@ main {
   transition: all 250ms ease-in-out; }
   main #content-overlay {
     position: fixed;
-    z-index: 100;
+    z-index: 0;
     top: 0;
     right: 0;
     bottom: 0;
@@ -194,37 +199,44 @@ main {
     opacity: 0;
     transition: all 400ms ease-in-out; }
   main #content-overlay.active {
-    opacity: 0.6; }
+    opacity: 0.6;
+    z-index: 100; }
 
-#posts {
+#posts, #post {
   padding: 0 50px; }
-  #posts article {
+  #posts article, #post article {
     /* background: #eee; */
     text-align: left;
     margin: 0 auto 25px auto;
     border-bottom: 1px solid #eee; }
-    #posts article h1 {
+    #posts article h1, #post article h1 {
       margin: 0 0 15px 0;
-      line-height: 38px; }
-      #posts article h1 a.title {
+      line-height: 38px;
+      font-weight: 700;
+      font-size: 36px; }
+      #posts article h1 a.title, #post article h1 a.title {
+        z-index: 200;
         font-weight: 700;
         font-size: 36px;
         color: #000;
         font-family: "Helvetica Neue", "Helvetica", sans-serif; }
-    #posts article p {
+    #posts article p, #post article p {
       padding: 12px 0;
       white-space: pre-line;
       font-size: 20px; }
-    #posts article span.date {
+    #posts article span.date, #post article span.date {
       display: block;
       font-family: "Helvetica Neue", "Helvetica", sans-serif;
       font-size: 12px;
       color: #bdc3c7; }
-      #posts article span.date .published {
+      #posts article span.date .published, #post article span.date .published {
         color: #000;
         font-family: inherit; }
-    #posts article:last-child {
+    #posts article:last-child, #post article:last-child {
       border: none; }
+
+#post {
+  padding: 0 80px; }
 
 section#admin {
   min-height: 100%;
@@ -256,6 +268,15 @@ section#admin {
     section#admin form button span {
       color: #fff;
       font-family: "Helvetica Neue", "Helvetica", sans-serif; }
+
+section#about {
+  min-height: 100%;
+  padding: 0 65px; }
+  section#about h1 {
+    font-weight: bold;
+    margin: 0 0 25px 0; }
+  section#about p {
+    font-size: 20px; }
 
 @media screen and (max-width: 1026px) {
   header {
@@ -601,20 +622,22 @@ html * {
     outline: none; }
 
 body {
-  background: #eee; }
+  background: #eee;
+  /* .ng-leave {
+      -webkit-animation:fadeOut .4s both ease-out;
+      -moz-animation:fadeOut .4s both ease-out;
+      animation:fadeOut .4s both ease-out;
+   }
+   */ }
   body #content-views {
     position: relative; }
   body .ng-enter, body .ng-leave {
     width: 100%;
     position: absolute; }
   body .ng-enter {
-    -webkit-animation: fadeIn .4s both ease-in;
-    -moz-animation: fadeIn .4s both ease-in;
-    animation: fadeIn .4s both ease-in; }
-  body .ng-leave {
-    -webkit-animation: fadeOut 0.25s both ease-in;
-    -moz-animation: fadeOut 0.25s both ease-in;
-    animation: fadeOut 0.25s both ease-in; }
+    -webkit-animation: fadeIn .4s both ease-in-out;
+    -moz-animation: fadeIn .4s both ease-in-out;
+    animation: fadeIn .4s both ease-in-out; }
   body input[type="text"] {
     padding: 10px 60px 10px 20px;
     border: none;

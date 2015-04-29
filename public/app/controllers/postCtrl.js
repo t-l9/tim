@@ -39,7 +39,7 @@ angular.module('postCtrl', ['postService'])
 
              });
 
-        Post.get($routeParams.user_id)
+        Post.get($routeParams.post_id)
             .success(function(data) {
                 vm.post = data;
             });

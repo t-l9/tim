@@ -3,6 +3,7 @@
 @import 'main-content';
 @import 'posts';
 @import '_admin';
+@import '_about';
 @import 'media-queries/_main';
 @import 'media-queries/_iphone-4';
 @import 'media-queries/_iphone-5';
@@ -35,16 +36,17 @@ body {
     }
 
     .ng-enter {
-        -webkit-animation:fadeIn .4s both ease-in;
-        -moz-animation:fadeIn .4s both ease-in;
-        animation:fadeIn .4s both ease-in;
+        -webkit-animation:fadeIn .4s both ease-in-out;
+        -moz-animation:fadeIn .4s both ease-in-out;
+        animation:fadeIn .4s both ease-in-out;
      }
 
-     .ng-leave {
-        -webkit-animation:fadeOut 0.25s both ease-in;
-        -moz-animation:fadeOut 0.25s both ease-in;
-        animation:fadeOut 0.25s both ease-in;
-     }
+     /* .ng-leave {
+         -webkit-animation:fadeOut .4s both ease-out;
+         -moz-animation:fadeOut .4s both ease-out;
+         animation:fadeOut .4s both ease-out;
+      }
+      */
 
     input[type="text"] {
         padding: 10px 60px 10px 20px;

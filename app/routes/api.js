@@ -45,7 +45,7 @@ module.exports = function(app, express) {
         });
 
 //---------------------------------------
-//  single user
+//  single post
 //---------------------------------------
     apiRouter.route('/posts/:post_id')
         .get(function(req, res) {

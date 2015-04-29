@@ -1,4 +1,4 @@
-#posts {
+#posts, #post {
     padding: 0 50px;
     article {
         /* background: #eee; */
@@ -8,7 +8,10 @@
         h1 {
             margin: 0 0 15px 0;
             line-height: 38px;
+            font-weight: 700;
+            font-size: 36px;
             a.title {
+                z-index: 200;
                 font-weight: $bold;
                 font-size: 36px;
                 color: #000;
@@ -35,5 +38,10 @@
         &:last-child {
             border: none;
         }
+    }
+}
+#post {
+    padding: 0 80px;
+    article {
     }
 }
