@@ -22,20 +22,21 @@
                 ul {
                     margin-top: 100px;
                     li {
-                        font-size: 38px;
+                        font-size: 22px;
                         padding-bottom: 25px;
-                        padding-left: 150px;
+
                     }
                 }
             }
             a#nav-toggle {
                 z-index:1000;
+            /*     position: absolute; */
                 span {
-                    height: 10px;
-                    width: 60px;
+                    /* height: 10px;
+                    width: 60px; */
 
-                    &:nth-child(1) {
-                        top: 0;
+                    /* &:nth-child(1) {
+                        top: 8;
                     }
 
                     &:nth-child(2) {
@@ -43,8 +44,8 @@
                     }
 
                     &:nth-child(3) {
-                        top: 36px;
-                    }
+                        top: 28px;
+                    } */
                 }
             }
             section#top {
@@ -58,7 +59,7 @@
                     padding: 25px 0;
                     img { width: inherit; }
                     figcaption {
-                        padding: 0 25%;
+                        padding: 0 20%;
                         #name {
                             margin: 25px 0 5px 0;
                             font-size: 32px;

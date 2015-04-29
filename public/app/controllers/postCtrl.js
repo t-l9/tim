@@ -8,6 +8,7 @@ angular.module('postCtrl', ['postService'])
 
                 for(i=0; i < vm.posts.length; i++) {
 
+                    // FORMAT DATE
                     if(data[i].date) {
 
                         var year     = null
@@ -21,12 +22,20 @@ angular.module('postCtrl', ['postService'])
 
                         data[i].date = monthDay +'/' + year;
 
-                    }
+                    };
+
+                    // FORMAT EXCERPT
+                    if(data[i].content) {
+
+                        data[i].content = data[i].content.split(/\s+/).slice(0, 30).join(" ") + '...';
+
+                    };
+
 
                 };
 
                 vm.posts = data;
-
+                console.log(data);
 
              });
 
