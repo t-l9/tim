@@ -7,7 +7,7 @@
     var mainTag   = document.querySelector('main');
     var overlay   = document.getElementById('content-overlay');
 
-    function removeActive(element) {
+    function removeActive() {
 
         hamburger.classList.remove('active');
         header.classList.remove('active');
@@ -17,10 +17,10 @@
 
     hamburger.addEventListener("click", function() {
 
-            this.classList.add( "active" );
-            header.classList.add('active');
-            overlay.classList.add('active');
-            mainTag.classList.add('active');
+            this.classList.toggle( "active" );
+            header.classList.toggle('active');
+            overlay.classList.toggle('active');
+            mainTag.classList.toggle('active');
         });
 
     nav.addEventListener("click", removeActive);
