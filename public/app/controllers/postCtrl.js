@@ -35,7 +35,6 @@ angular.module('postCtrl', ['postService'])
                 };
 
                 vm.posts = data;
-                console.log(data);
 
              });
 
