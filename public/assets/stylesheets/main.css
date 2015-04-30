@@ -546,7 +546,6 @@ section#about {
       z-index: 1000;
       /*     position: absolute; */ }
       header a#nav-toggle span {
-        width: 50px;
                     /* &:nth-child(1) {
                         top: 8;
                     }
