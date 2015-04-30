@@ -388,9 +388,7 @@ section#about {
       header nav ul {
         margin-top: 100px; }
         header nav ul li {
-          font-size: 38px;
-          padding-bottom: 25px;
-          padding-left: 150px; }
+          font-size: 22px; }
     header a#nav-toggle {
       z-index: 1000;
       position: absolute; }
@@ -465,9 +463,7 @@ section#about {
       header nav ul {
         margin-top: 100px; }
         header nav ul li {
-          font-size: 38px;
-          padding-bottom: 25px;
-          padding-left: 150px; }
+          font-size: 22px; }
     header a#nav-toggle {
       z-index: 1000;
       position: absolute; }
@@ -545,8 +541,7 @@ section#about {
       header nav ul {
         margin-top: 100px; }
         header nav ul li {
-          font-size: 22px;
-          padding-bottom: 25px; }
+          font-size: 22px; }
     header a#nav-toggle {
       z-index: 1000;
       /*     position: absolute; */ }
@@ -572,7 +567,7 @@ section#about {
       header section#top figure {
         padding: 25px 0; }
         header section#top figure img {
-          width: inherit; }
+          width: 45%; }
         header section#top figure figcaption {
           padding: 0 20%; }
           header section#top figure figcaption #name {

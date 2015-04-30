@@ -7,7 +7,7 @@
     var mainTag   = document.querySelector('main');
     var overlay   = document.getElementById('content-overlay');
 
-    function removeActive() {
+    var removeActive = function() {
 
         hamburger.classList.remove('active');
         header.classList.remove('active');
