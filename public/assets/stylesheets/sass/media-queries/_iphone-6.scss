@@ -30,8 +30,7 @@
                 z-index:1000;
             /*     position: absolute; */
                 span {
-                    /* height: 10px;
-                    width: 60px; */
+                    width: 50px;
 
                     /* &:nth-child(1) {
                         top: 8;
@@ -55,9 +54,9 @@
 
                 figure {
                     padding: 25px 0;
-                    img { width: 45%; }
+                    img { width: 35%; }
                     figcaption {
-                        padding: 0 20%;
+                        padding: 0;
                         #name {
                             margin: 25px 0 5px 0;
                             font-size: 32px;
@@ -96,10 +95,15 @@
             z-index: 500;
             position: relative;
             margin: 0;
-            padding: 60px 0 0 0;
-            section#posts {
+            padding: 60px 0 25px 0;
+            section {
                 margin: 25px auto 0 auto;
             }
+
+            section#about, section#posts {
+                padding: 0 25px;
+            }
+
             &.active {
                 /* margin-right: -40%; */
                 /* z-index: 1; */

@@ -411,7 +411,7 @@ section#about {
         header section#top figure img {
           width: inherit; }
         header section#top figure figcaption {
-          padding: 0 25%; }
+          padding: 0 0; }
           header section#top figure figcaption #name {
             margin: 25px 0 5px 0;
             font-size: 32px;
@@ -486,7 +486,7 @@ section#about {
         header section#top figure img {
           width: inherit; }
         header section#top figure figcaption {
-          padding: 0 25%; }
+          padding: 0; }
           header section#top figure figcaption #name {
             margin: 25px 0 5px 0;
             font-size: 32px;
@@ -546,8 +546,7 @@ section#about {
       z-index: 1000;
       /*     position: absolute; */ }
       header a#nav-toggle span {
-        /* height: 10px;
-        width: 60px; */
+        width: 50px;
                     /* &:nth-child(1) {
                         top: 8;
                     }
@@ -567,9 +566,9 @@ section#about {
       header section#top figure {
         padding: 25px 0; }
         header section#top figure img {
-          width: 45%; }
+          width: 35%; }
         header section#top figure figcaption {
-          padding: 0 20%; }
+          padding: 0; }
           header section#top figure figcaption #name {
             margin: 25px 0 5px 0;
             font-size: 32px;
@@ -595,11 +594,13 @@ section#about {
     z-index: 500;
     position: relative;
     margin: 0;
-    padding: 60px 0 0 0; }
+    padding: 60px 0 25px 0; }
     main #content-overlay {
       margin: 0; }
-    main section#posts {
+    main section {
       margin: 25px auto 0 auto; }
+    main section#about, main section#posts {
+      padding: 0 25px; }
     main.active {
       /* margin-right: -40%; */
       /* z-index: 1; */ } }
