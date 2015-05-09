@@ -1,6 +1,8 @@
-angular.module('postCtrl', ['postService'])
-    .controller('postController', function(Post, $routeParams) {
+angular.module('postCtrl', ['postService', 'authService'])
+    .controller('postController', function(Post, Auth, $routeParams) {
         var vm = this;
+
+        vm.loggedIn = Auth.isLoggedIn();
 
         Post.all()
             .success(function(data) {
