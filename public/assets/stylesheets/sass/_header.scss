@@ -36,7 +36,8 @@ header {
                     transition: all 250ms ease-in-out;
                     &:hover {
                         color: #fff !important;
-                        background: #19B5FE;
+                        background: #1abc9c;
+
                     }
                     &:visited {
                         color: #000;
@@ -72,6 +73,7 @@ header {
         height: 5px;
         width: 30px;
         background: #fff;
+        /* background: #2bfebc; */
         border-radius: 1px;
         opacity: 1;
         left: 0;
@@ -99,6 +101,7 @@ header {
 
     #nav-toggle.active span {
         background: #000;
+        /* background: #2bfebc; */
     }
 
     #nav-toggle.active span:nth-child(1) {
@@ -151,8 +154,9 @@ header {
             background-image: -webkit-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
             background-image: -ms-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
             background-image: linear-gradient(to bottom, #b9b1b0 0%, #60acca 100%);
+            background: #000;
             z-index: 200;
-            opacity: .8;
+            /* opacity: .8; */
             position: absolute;
             top: 0;
             right: 0;
@@ -169,29 +173,41 @@ header {
             img {
                 border-radius: 100%;
                 width: 150px;
+                /* border: solid 0px #333; */
             }
 
             figcaption {
                 #name, #job, #announcement {
                     color: $white;
-
                 }
 
                 #name {
-                    margin: 15px 0 0 0;
+                    margin: 15px 0 10px 0;
                     font-size: 36px;
                     text-transform: uppercase;
                     font-weight: $bold;
+                    /* background: linear-gradient(330deg, #2bfebc 0%, #6ab6fc 25%, #fd70fc 50%, #fd766e 75%, #fda728 100%); */
+                    /* -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent; */
+                /*     -ms-transform: rotate(-3deg); IE 9
+                -webkit-transform: rotate(-3deg); Chrome, Safari, Opera
+                transform: rotate(-3deg); */
                     a {
                         color: #fff;
+                        /* color: #fcf738; */
+                        /* color: #fd70fc; */
                         font-family: $font-sans-serif;
+                        /* font-family: 'Permanent Marker', cursive; */
+                        font-style: italic;
+                        /* text-shadow: 2px 2px #fefefe; */
                     }
                 }
 
                 #job {
-                    font-size: 20px;
-                    font-family: $font-serif;
-                    opacity: .65;
+                    font-size: 16px;
+                    font-family: $font-sans-serif;
+                    color: #999;
+                    /* opacity: .65; */
                 }
 
                 #title {
