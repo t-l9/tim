@@ -170,6 +170,17 @@ header {
         opacity: .65;
         color: #fff;
         margin: 0; }
+    header #top p {
+      color: #999;
+      font-size: 10px;
+      font-family: "Helvetica Neue", "Helvetica", sans-serif;
+      position: absolute;
+      z-index: 999;
+      right: 0;
+      bottom: 0;
+      left: 0; }
+      header #top p span {
+        color: #1abc9c; }
   header #bottom {
     display: none;
     position: absolute;
@@ -284,7 +295,7 @@ section#admin {
     height: 100px; }
   section#admin form button {
     border: none;
-    background: #50c0fc;
+    background: #1abc9c;
     padding: 10px 25px; }
     section#admin form button span {
       color: #fff;
