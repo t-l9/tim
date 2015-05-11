@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
 header {
-  width: 50%;
+  width: 40%;
   min-height: 100%;
   position: fixed;
   z-index: 200;
@@ -106,7 +106,7 @@ header {
     z-index: 100;
     top: 0;
     right: 0;
-    bottom: 50%;
+    bottom: 0;
     left: 0;
     padding: 50px 50px 25px 50px;
     background: #fff; }
@@ -132,7 +132,7 @@ header {
       z-index: 200;
       position: relative;
       margin: 0;
-      padding: 0 75px; }
+      padding: 0 25px; }
       header #top figure img {
         border-radius: 100%;
         width: 150px;
@@ -171,6 +171,7 @@ header {
         color: #fff;
         margin: 0; }
   header #bottom {
+    display: none;
     position: absolute;
     z-index: 200;
     top: 50%;
@@ -201,7 +202,7 @@ header {
     left: 300px !important; }
 
 main {
-  margin: 0 0 0 50%;
+  margin: 0 0 0 40%;
   padding: 25px 0 0 0;
   background: #fdfdfd;
   min-height: 100%;
@@ -213,7 +214,7 @@ main {
     right: 0;
     bottom: 0;
     left: 0;
-    margin: 0 0 0 50%;
+    margin: 0 0 0 40%;
     background: #000;
     opacity: 0;
     transition: all 400ms ease-in-out; }
@@ -301,12 +302,20 @@ section#about {
 @media screen and (max-width: 1026px) {
   header {
     width: 40%;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #b9b1b0), color-stop(1, #60acca));
+    background: #000;
+    /* background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #b9b1b0),
+        color-stop(1, #60acca)
+    );
     background-image: -o-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
     background-image: -moz-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
     background-image: -webkit-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
     background-image: -ms-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-    background-image: linear-gradient(to bottom, #b9b1b0 0%, #60acca 100%); }
+    background-image: linear-gradient(to bottom, #b9b1b0 0%, #60acca 100%);
+     */ }
     header section#top {
       background-image: none;
       background: transparent;

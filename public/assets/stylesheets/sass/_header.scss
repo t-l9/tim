@@ -1,6 +1,6 @@
 
 header {
-    width: 50%;
+    width: 40%;
     min-height: 100%;
     position: fixed;
     z-index: 200;
@@ -134,7 +134,7 @@ header {
         z-index: 100;
         top: 0;
         right: 0;
-        bottom: 50%;
+        bottom: 0;
         left: 0;
         padding: 50px 50px 25px 50px;
         background: #fff;
@@ -169,7 +169,7 @@ header {
             z-index: 200;
             position: relative;
             margin: 0;
-            padding: 0 75px;
+            padding: 0 25px;
 
             img {
                 border-radius: 100%;
@@ -224,6 +224,7 @@ header {
     }
 
     #bottom {
+        display: none;
         position: absolute;
         z-index: 200;
         top: 50%;

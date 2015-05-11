@@ -1,7 +1,8 @@
 @media screen and (max-width: 1026px) {
     header {
         width: 40%;
-        background-image: -webkit-gradient(
+        background: #000;
+        /* background-image: -webkit-gradient(
             linear,
             left top,
             left bottom,
@@ -13,7 +14,7 @@
         background-image: -webkit-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
         background-image: -ms-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
         background-image: linear-gradient(to bottom, #b9b1b0 0%, #60acca 100%);
-
+         */
         section#top {
             background-image: none;
             background: transparent;
