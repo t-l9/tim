@@ -32,10 +32,12 @@ header {
           display: block;
           width: 100%;
           padding: 15px 0 15px 50px;
+          border-left: solid 5px #fff;
           transition: all 250ms ease-in-out; }
           header nav ul li a:hover {
-            color: #fff !important;
-            background: #1abc9c; }
+            /* color: #fff !important; */
+            /* background: #1abc9c; */
+            border-left: solid 5px #1abc9c; }
           header nav ul li a:visited {
             color: #000; }
   header #nav-toggle {
@@ -62,7 +64,6 @@ header {
     width: 30px;
     background: #fff;
     /* background: #2bfebc; */
-    border-radius: 1px;
     opacity: 1;
     left: 0;
     -webkit-transform: rotate(0deg);
