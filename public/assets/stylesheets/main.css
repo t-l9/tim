@@ -135,8 +135,8 @@ header {
       padding: 0 25px; }
       header #top figure img {
         border-radius: 100%;
-        width: 150px;
-        /* border: solid 4px #1abc9c; */ }
+        width: 175px;
+        border: solid 2px #333; }
       header #top figure figcaption #name, header #top figure figcaption #job, header #top figure figcaption #announcement {
         color: #ffffff; }
       header #top figure figcaption #name {
