@@ -284,6 +284,13 @@ main {
 
 #post {
   padding: 0 95px; }
+  #post article p:before {
+    width: 75px;
+    height: 3px;
+    margin: 0 0 25px;
+    background: #B29600;
+    display: block;
+    content: ""; }
 
 section#admin {
   min-height: 100%;
@@ -310,11 +317,13 @@ section#admin {
     height: 100px; }
   section#admin form button {
     border: none;
-    background: #1abc9c;
-    padding: 10px 25px; }
+    background: #B29600;
+    padding: 10px 25px;
+    border-radius: 4px; }
     section#admin form button span {
       color: #fff;
-      font-family: "Helvetica Neue", "Helvetica", arial, sans-serif; }
+      font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
+      font-size: 16px; }
 
 section#about {
   min-height: 100%;

@@ -48,5 +48,15 @@
 #post {
     padding: 0 95px;
     article {
+        p:before {
+
+            width: 75px;
+            height: 3px;
+            margin: 0 0 25px;
+            background: $gold;
+            display: block;
+            content: "";
+
+        }
     }
 }

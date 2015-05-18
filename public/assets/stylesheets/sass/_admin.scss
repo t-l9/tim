@@ -32,11 +32,13 @@ section#admin {
 
         button {
             border: none;
-            background: #1abc9c;
+            background: $gold;
             padding: 10px 25px;
+            border-radius: 4px;
             span {
                 color: #fff;
                 font-family: $font-sans-serif;
+                font-size: 16px;
             }
         }
     }
