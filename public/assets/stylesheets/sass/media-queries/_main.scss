@@ -19,7 +19,10 @@
             background-image: none;
             background: transparent;
             bottom: 0;
-            .overlay { opacity: 1; }
+            .overlay {
+                opacity: 1;
+                background: #222;
+            }
             figure {
                 padding: 0 5px;
                 margin: 0;

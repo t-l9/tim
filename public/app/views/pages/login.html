@@ -1,7 +1,8 @@
+
 <section id="admin">
     <h1>Login</h1>
 
-    <form name="postForm" action="#" ng-submit="post.createPost(postData)">
+    <form name="loginForm" ng-submit="post.login(loginData)">
         <div class="row">
             <div class="small-9 large-centered columns">
                 <div class="row">
@@ -10,7 +11,7 @@
                     </div>
 
                     <div class="small-11 columns">
-                        <input type="text" class="form-control" ng-model="postData.title">
+                        <input type="text" class="form-control" ng-model="loginData.email">
                     </div>
                 </div>
 
@@ -20,7 +21,7 @@
                     </div>
 
                     <div class="small-11 columns">
-                        <input type="password" class="form-control" ng-model="postData.img">
+                        <input type="password" class="form-control" ng-model="loginData.password">
                     </div>
                 </div>
 
@@ -34,4 +35,12 @@
             </div>
         </div>
     </form>
+
+    <div ng-if="!post.isLoggedIn">
+        <span>not logged in</span>
+    </div>
+
+    <div ng-if="post.isLoggedIn">
+        <span>logged in</span>
+    </div>
 </section>

@@ -27,7 +27,7 @@ header {
         display: block;
         width: 100%; }
         header nav ul li a {
-          font-family: "Open Sans", "Helvetica Neue", "Helvetica", arial, sans-serif;
+          font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
           font-size: 20px;
           color: #000;
           display: block;
@@ -38,7 +38,7 @@ header {
           header nav ul li a:hover {
             /* color: #fff !important; */
             /* background: #1abc9c; */
-            border-left: solid 5px #1abc9c;
+            border-left: solid 5px #B29600;
             padding-left: 55px; }
           header nav ul li a:visited {
             color: #000; }
@@ -83,7 +83,7 @@ header {
   header #nav-toggle span:nth-child(3) {
     top: 28px; }
   header #nav-toggle.active span {
-    background: #000;
+    background: #B29600;
     /* background: #2bfebc; */ }
   header #nav-toggle.active span:nth-child(1) {
     top: 18px;
@@ -129,11 +129,11 @@ header {
       background-image: -ms-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
       background-image: linear-gradient(to bottom, #b9b1b0 0%, #60acca 100%);
       background: #222; */
-      /* background: url(../../assets/images/sidebar.png) 0 0 no-repeat;
-      background-size: cover; */
-      background: #222;
+      background: url(../../assets/images/sidebar-bg.png) 0 0 no-repeat;
+      background-size: cover;
+      /* background: #222; */
       z-index: 200;
-      /* opacity: .2; */
+      opacity: .2;
       position: absolute;
       top: 0;
       right: 0;
@@ -165,13 +165,13 @@ header {
           color: #fff;
           /* color: #fcf738; */
           /* color: #fd70fc; */
-          font-family: "Open Sans", "Helvetica Neue", "Helvetica", arial, sans-serif;
+          font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
           /* font-family: 'Permanent Marker', cursive; */
           font-style: italic;
           /* text-shadow: 2px 2px #fefefe; */ }
       header #top figure figcaption #job {
         font-size: 16px;
-        font-family: "Open Sans", "Helvetica Neue", "Helvetica", arial, sans-serif;
+        font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
         color: #999;
         /* opacity: .65; */ }
       header #top figure figcaption #title {
@@ -184,14 +184,14 @@ header {
     header #top p#love {
       color: #999;
       font-size: 10px;
-      font-family: "Open Sans", "Helvetica Neue", "Helvetica", arial, sans-serif;
+      font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
       position: absolute;
       z-index: 999;
       right: 0;
       bottom: 0;
       left: 0; }
       header #top p#love span {
-        color: #1abc9c; }
+        color: #B29600; }
   header #bottom {
     display: none;
     position: absolute;
@@ -219,7 +219,7 @@ header {
         font-family: "Droid Serif", "Times", "Times New Roman", serif;
         font-style: italic; }
       header #bottom .content p {
-        font-family: "Open Sans", "Helvetica Neue", "Helvetica", arial, sans-serif; }
+        font-family: "Helvetica Neue", "Helvetica", arial, sans-serif; }
   header.active {
     left: 300px !important; }
 
@@ -256,25 +256,26 @@ main {
       line-height: 38px;
       font-weight: 700;
       font-size: 42px;
-      font-family: "Open Sans", "Helvetica Neue", "Helvetica", arial, sans-serif; }
+      font-family: "Helvetica Neue", "Helvetica", arial, sans-serif; }
       #posts article h1 a.title, #post article h1 a.title {
         z-index: 200;
         font-weight: 700;
         font-size: 42px;
         color: #222;
-        font-family: "Open Sans", "Helvetica Neue", "Helvetica", arial, sans-serif; }
+        font-family: "Helvetica Neue", "Helvetica", arial, sans-serif; }
     #posts article p, #post article p {
       font-family: "Droid Serif", "Times", "Times New Roman", serif;
       padding: 12px 0;
       white-space: pre-line;
       font-size: 20px;
+      font-weight: 300;
       color: #222; }
     #posts article span.date, #post article span.date {
       display: block;
-      font-family: "Open Sans", "Helvetica Neue", "Helvetica", arial, sans-serif;
+      font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
       font-size: 12px;
       /* color: #bdc3c7; */
-      color: #1abc9c; }
+      color: #B29600; }
       #posts article span.date .published, #post article span.date .published {
         color: #222;
         font-family: inherit; }
@@ -291,7 +292,7 @@ section#admin {
     font-weight: bold;
     margin: 0 0 25px 0; }
   section#admin form label {
-    font-family: "Open Sans", "Helvetica Neue", "Helvetica", arial, sans-serif;
+    font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
     font-size: 16px; }
   section#admin form input[type="password"] {
     padding: 10px 20px; }
@@ -301,7 +302,7 @@ section#admin {
     background: #f1f1f1;
     width: 100%;
     margin: 0 0 25px 0;
-    font-family: "Open Sans", "Helvetica Neue", "Helvetica", arial, sans-serif;
+    font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
     font-size: 16px;
     color: #666;
     border-radius: 4px; }
@@ -313,7 +314,7 @@ section#admin {
     padding: 10px 25px; }
     section#admin form button span {
       color: #fff;
-      font-family: "Open Sans", "Helvetica Neue", "Helvetica", arial, sans-serif; }
+      font-family: "Helvetica Neue", "Helvetica", arial, sans-serif; }
 
 section#about {
   min-height: 100%;
@@ -346,7 +347,8 @@ section#about {
       background: transparent;
       bottom: 0; }
       header section#top .overlay {
-        opacity: 1; }
+        opacity: 1;
+        background: #222; }
       header section#top figure {
         padding: 0 5px;
         margin: 0; }

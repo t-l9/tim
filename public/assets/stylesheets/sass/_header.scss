@@ -38,7 +38,7 @@ header {
                     &:hover {
                         /* color: #fff !important; */
                         /* background: #1abc9c; */
-                        border-left: solid 5px #1abc9c;
+                        border-left: solid 5px $gold;
                         padding-left: 55px;
 
                     }
@@ -102,7 +102,7 @@ header {
     }
 
     #nav-toggle.active span {
-        background: #000;
+        background: $gold;
         /* background: #2bfebc; */
     }
 
@@ -157,11 +157,11 @@ header {
         background-image: -ms-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
         background-image: linear-gradient(to bottom, #b9b1b0 0%, #60acca 100%);
         background: #222; */
-            /* background: url(../../assets/images/sidebar.png) 0 0 no-repeat;
-            background-size: cover; */
-            background: #222;
+            background: url(../../assets/images/sidebar-bg.png) 0 0 no-repeat;
+            background-size: cover;
+            /* background: #222; */
             z-index: 200;
-            /* opacity: .2; */
+            opacity: .2;
             position: absolute;
             top: 0;
             right: 0;
@@ -235,7 +235,7 @@ header {
             bottom: 0;
             left: 0;
             span {
-                color: #1abc9c;
+                color: $gold;
             }
         }
     }

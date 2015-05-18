@@ -12,6 +12,7 @@ angular.module('authService', [])
             }).success(function(data) {
 
                 AuthToken.setToken(data.token);
+                console.log(data.token);
                 return data;
 
             });
