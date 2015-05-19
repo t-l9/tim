@@ -355,6 +355,13 @@ section#about {
     font-size: 20px;
     font-family: "Droid Serif", "Times", "Times New Roman", serif; }
 
+@media screen and (max-width: 1200px) {
+  section#post {
+    padding: 0 25px !important; }
+    section#post article {
+      padding: 0 40px; }
+      section#post article h1 {
+        line-height: 46px; } }
 @media screen and (max-width: 1026px) {
   header {
     width: 40%;
@@ -397,6 +404,13 @@ section#about {
       padding: 0 0 0 50px; }
       main section#posts article:last-child {
         float: left; } }
+@media screen and (max-width: 1026px) {
+  main section#post {
+    padding: 0 25px !important; }
+    main section#post article {
+      padding: 0 40px; }
+      main section#post article h1 {
+        line-height: 46px; } }
 @media only screen and (max-width: 910px) {
   header section#top figure figcaption #name {
     font-size: 26px; }
@@ -449,14 +463,23 @@ section#about {
     z-index: 500;
     position: relative;
     margin: 0;
-    padding: 60px 0 0 0; }
+    padding: 60px 0 0 0;
+    /* #admin {
+        padding: 0 10px;
+        text-align: center;
+        button[type="submit"].right.button {
+            float: none !important;
+        }
+    } */ }
     main #content-overlay {
       margin: 0; }
     main section#posts {
       margin: 25px auto 0 auto; }
     main.active {
       /* margin-right: -40%; */
-      /* z-index: 1; */ } }
+      /* z-index: 1; */ }
+    main section#post {
+      padding: 0 50px; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* #nav-toggle, nav {
       display: none;

@@ -1,3 +1,18 @@
+@media screen and (max-width: 1200px) {
+    section#post {
+        padding: 0 25px !important;
+        article {
+                h1 {
+                    line-height: 46px;
+                }
+
+            padding: 0 40px;
+        }
+
+
+    }
+}
+
 @media screen and (max-width: 1026px) {
     header {
         width: 40%;
@@ -63,6 +78,23 @@
     }
 }
 
+@media screen and (max-width: 1026px) {
+    main {
+        section#post {
+            padding: 0 25px !important;
+            article {
+                    h1 {
+                        line-height: 46px;
+                    }
+
+                padding: 0 40px;
+            }
+
+
+        }
+    }
+}
+
 @media only screen and (max-width: 910px) {
     header {
         section#top {
@@ -78,6 +110,9 @@
                 }
             }
         }
+    }
+    main {
+
     }
 }
 
@@ -156,6 +191,21 @@
             /* margin-right: -40%; */
             /* z-index: 1; */
         }
+
+        /* #admin {
+            padding: 0 10px;
+            text-align: center;
+            button[type="submit"].right.button {
+                float: none !important;
+            }
+        } */
+
+
+        section#post {
+            padding: 0 50px;
+        }
+
+
 
     }
 }
