@@ -47,10 +47,10 @@ app.use('/api', apiRouter);
 //---------------------------------------
 //  basic auth
 //---------------------------------------
-app.get('/admin', require('quick-login')(function checkAuth(data, next){
-  next(null, data.name === 'timlauter' &&
-    data.pass === 'moes-tavern')
-}))
+// app.get('/admin', require('quick-login')(function checkAuth(data, next){
+//   next(null, data.name === 'timlauter' &&
+//     data.pass === 'moes-tavern')
+// }))
 
 
 //---------------------------------------

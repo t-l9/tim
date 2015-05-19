@@ -2,27 +2,21 @@ angular.module('postCtrl', ['postService', 'authService'])
     .controller('postController', function(Post, Auth, AuthToken, $routeParams) {
         var vm = this;
 
-        vm.loggedIn = Auth.isLoggedIn();
-
+        vm.isLoggedIn = Auth.isLoggedIn();
 
         vm.login = function(loginData) {
-            console.log(loginData);
+            console.log('------------------------------');
             Auth.login(loginData.email, loginData.password)
 			.success(function(data) {
 
-
 				if (data.success)
-					window.location.href = '/'
-				else
-					vm.error = data.message;
+					// window.location.href = '/admin'
+                    console.log(data.token);
 
-			});
+			}).error(function(error) {
+                console.log(error);
+            });
         }
-
-        vm.isLoggedIn = function() {
-            Auth.isLoggedIn();
-        }
-
 
         Post.all()
             .success(function(data) {

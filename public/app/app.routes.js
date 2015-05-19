@@ -29,12 +29,6 @@ angular.module('app.routes', ['ngRoute'])
 			controllerAs: 'post'
 		})
 
-		.when('/login', {
-			templateUrl: 'app/views/pages/login.html',
-			controller: 'postController',
-			controllerAs: 'post'
-		})
-
 		.when('/about', {
 			templateUrl: 'app/views/pages/about.html'
 		})
