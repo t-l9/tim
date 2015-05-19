@@ -7,10 +7,8 @@ angular.module('postCtrl', ['postService', 'authService'])
         vm.login = function(loginData) {
             Auth.login(loginData.email, loginData.password)
 			.success(function(data) {
-
 				if (data.success)
-					// window.location.href = '/admin'
-                    console.log(data.token);
+					window.location.href = '/admin'
 
 			}).error(function(error) {
                 console.log(error);
