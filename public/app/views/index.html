@@ -36,13 +36,13 @@
 
     </head>
     <body ng-app="mainApp">
-        <header>
+        <header role=banner>
             <a id="nav-toggle" href="#">
                 <span></span>
                 <span></span>
                 <span></span>
             </a>
-            <nav>
+            <nav role=”navigation”>
                 <ul>
                     <li><a href="/">Blog</a></li>
                     <li><a href="/about">About</a></li>
@@ -61,17 +61,10 @@
                 </figure>
                 <p id="love">Made with <span>&#10084;</span> in NYC.</p>
             </section>
-
-            <section id="bottom">
-                <div class="content">
-                    <p id="bummer">Bummer, I'm under construction.</p>
-                    <p>Don't worry, I still work.</p>
-                </div>
-            </section>
         </header>
         <main>
             <span id="content-overlay"></span>
-            <div id="content-views">
+            <div id="content-views" role="main">
                 <div ng-view></div>
             </div>
         </main>
