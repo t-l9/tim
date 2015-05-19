@@ -29,14 +29,14 @@ header {
                 a {
                     font-family: $font-sans-serif;
                     font-size: 20px;
-                    color: #000;
+                    color: #222;
                     display: block;
                     width: 100%;
                     padding: 15px 0 15px 50px;
                     border-left: solid 5px #fff;
                     transition: all 250ms ease-in-out;
                     &:hover {
-                        /* color: #fff !important; */
+                        color: #222;
                         background: #fafafa;
                         border-left: solid 5px $gold;
                         padding-left: 55px;
@@ -161,7 +161,7 @@ header {
             background-size: cover;
             /* background: #222; */
             z-index: 200;
-            opacity: .2;
+            opacity: .35;
             position: absolute;
             top: 0;
             right: 0;
@@ -188,7 +188,7 @@ header {
 
                 #name {
                     margin: 25px 0 10px 0;
-                    font-size: 36px;
+                    font-size: 42px;
                     text-transform: uppercase;
                     font-weight: $bold;
                     /* background: linear-gradient(330deg, #2bfebc 0%, #6ab6fc 25%, #fd70fc 50%, #fd766e 75%, #fda728 100%); */

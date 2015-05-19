@@ -1,10 +1,16 @@
 #posts, #post {
-    padding: 0 50px;
+    padding: 0 75px;
+    max-width: 960px;
+    margin: 0 auto;
     article {
         /* background: #eee; */
         text-align: left;
         margin: 0 auto 25px auto;
         border-bottom: 1px solid #eee;
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
         h1 {
             margin: 0 0 15px 0;
             line-height: 38px;
@@ -15,7 +21,7 @@
                 z-index: 200;
                 font-weight: $bold;
                 font-size: 42px;
-                color: #222;
+                color: #333;
                 font-family: $font-sans-serif;
             }
         }
@@ -25,7 +31,7 @@
             white-space: pre-line;
             font-size: 20px;
             font-weight: 300;
-            color: #222;
+            color: #333;
         }
         span.date {
             display: block;
@@ -46,7 +52,7 @@
     }
 }
 #post {
-    padding: 0 95px;
+    padding: 0 120px;
     article {
         p:before {
 
@@ -56,6 +62,7 @@
             background: $gold;
             display: block;
             content: "";
+
 
         }
     }

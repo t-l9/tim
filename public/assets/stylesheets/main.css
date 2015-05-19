@@ -29,14 +29,14 @@ header {
         header nav ul li a {
           font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
           font-size: 20px;
-          color: #000;
+          color: #222;
           display: block;
           width: 100%;
           padding: 15px 0 15px 50px;
           border-left: solid 5px #fff;
           transition: all 250ms ease-in-out; }
           header nav ul li a:hover {
-            /* color: #fff !important; */
+            color: #222;
             background: #fafafa;
             border-left: solid 5px #B29600;
             padding-left: 55px; }
@@ -133,7 +133,7 @@ header {
       background-size: cover;
       /* background: #222; */
       z-index: 200;
-      opacity: .2;
+      opacity: .35;
       position: absolute;
       top: 0;
       right: 0;
@@ -152,7 +152,7 @@ header {
         color: #ffffff; }
       header #top figure figcaption #name {
         margin: 25px 0 10px 0;
-        font-size: 36px;
+        font-size: 42px;
         text-transform: uppercase;
         font-weight: 700;
         /* background: linear-gradient(330deg, #2bfebc 0%, #6ab6fc 25%, #fd70fc 50%, #fd766e 75%, #fda728 100%); */
@@ -245,12 +245,18 @@ main {
     z-index: 100; }
 
 #posts, #post {
-  padding: 0 50px; }
+  padding: 0 75px;
+  max-width: 960px;
+  margin: 0 auto; }
   #posts article, #post article {
     /* background: #eee; */
     text-align: left;
     margin: 0 auto 25px auto;
-    border-bottom: 1px solid #eee; }
+    border-bottom: 1px solid #eee;
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out; }
     #posts article h1, #post article h1 {
       margin: 0 0 15px 0;
       line-height: 38px;
@@ -261,7 +267,7 @@ main {
         z-index: 200;
         font-weight: 700;
         font-size: 42px;
-        color: #222;
+        color: #333;
         font-family: "Helvetica Neue", "Helvetica", arial, sans-serif; }
     #posts article p, #post article p {
       font-family: "Droid Serif", "Times", "Times New Roman", serif;
@@ -269,7 +275,7 @@ main {
       white-space: pre-line;
       font-size: 20px;
       font-weight: 300;
-      color: #222; }
+      color: #333; }
     #posts article span.date, #post article span.date {
       display: block;
       font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
@@ -283,7 +289,7 @@ main {
       border: none; }
 
 #post {
-  padding: 0 95px; }
+  padding: 0 120px; }
   #post article p:before {
     width: 75px;
     height: 3px;
@@ -319,11 +325,18 @@ section#admin {
     border: none;
     background: #B29600;
     padding: 10px 25px;
-    border-radius: 4px; }
+    border-radius: 4px;
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out; }
     section#admin form button span {
       color: #fff;
       font-family: "Helvetica Neue", "Helvetica", arial, sans-serif;
       font-size: 16px; }
+    section#admin form button:hover {
+      margin-top: 2px;
+      background: #c4a502; }
 
 section#about {
   min-height: 100%;
