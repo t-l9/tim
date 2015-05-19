@@ -16,12 +16,6 @@ angular.module('app.routes', ['ngRoute'])
 			controller: 'postController',
 			controllerAs: 'post'
 		})
-		//
-		// login page
-
-		// .when('/user_id', {
-		// 	templateUrl: 'app/views/pages/postSinge.html'
-		// });
 
 		.when('/admin', {
 			templateUrl: 'app/views/pages/admin.html',

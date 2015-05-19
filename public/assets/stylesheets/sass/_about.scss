@@ -4,6 +4,16 @@ section#about {
     h1 {
         font-weight: bold;
         margin: 0 0 25px 0;
+        &:after {
+
+            width: 75px;
+            height: 3px;
+            margin: 25px 0 0 0;
+            background: $gold;
+            display: block;
+            content: "";
+
+        }
     }
     p {
         font-size: 20px;

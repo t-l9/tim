@@ -5,7 +5,6 @@ angular.module('postCtrl', ['postService', 'authService'])
         vm.isLoggedIn = Auth.isLoggedIn();
 
         vm.login = function(loginData) {
-            console.log('------------------------------');
             Auth.login(loginData.email, loginData.password)
 			.success(function(data) {
 

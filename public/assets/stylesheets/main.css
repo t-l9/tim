@@ -37,7 +37,7 @@ header {
           transition: all 250ms ease-in-out; }
           header nav ul li a:hover {
             /* color: #fff !important; */
-            /* background: #1abc9c; */
+            background: #fafafa;
             border-left: solid 5px #B29600;
             padding-left: 55px; }
           header nav ul li a:visited {
@@ -331,6 +331,13 @@ section#about {
   section#about h1 {
     font-weight: bold;
     margin: 0 0 25px 0; }
+    section#about h1:after {
+      width: 75px;
+      height: 3px;
+      margin: 25px 0 0 0;
+      background: #B29600;
+      display: block;
+      content: ""; }
   section#about p {
     font-size: 20px; }
 
