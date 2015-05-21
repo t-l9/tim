@@ -200,9 +200,17 @@
             }
         } */
 
+        section#posts {
+            article {
+                padding: 0;
+            }
+        }
 
         section#post {
             padding: 0 50px;
+            article {
+                padding: 0;
+            }
         }
 
 

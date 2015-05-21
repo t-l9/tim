@@ -83,7 +83,7 @@ header {
   header #nav-toggle span:nth-child(3) {
     top: 28px; }
   header #nav-toggle.active span {
-    background: #B29600;
+    background: #333;
     /* background: #2bfebc; */ }
   header #nav-toggle.active span:nth-child(1) {
     top: 18px;
@@ -478,8 +478,12 @@ section#about {
     main.active {
       /* margin-right: -40%; */
       /* z-index: 1; */ }
+    main section#posts article {
+      padding: 0; }
     main section#post {
-      padding: 0 50px; } }
+      padding: 0 50px; }
+      main section#post article {
+        padding: 0; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* #nav-toggle, nav {
       display: none;
