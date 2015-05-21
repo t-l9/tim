@@ -133,7 +133,7 @@ header {
       background-size: cover;
       /* background: #222; */
       z-index: 200;
-      opacity: .35;
+      opacity: .2;
       position: absolute;
       top: 0;
       right: 0;
@@ -724,16 +724,16 @@ section#about {
 /*********************************************
 ***             END IPHONE 6 PLUS          ***
 *********************************************/
-html * {
-  font-family: 'Times', 'Times New Roman', serif; }
-  html * a {
-    color: #36bd8e;
-    text-decoration: none; }
-  html * h1, html * h2, html * h3, html * h4, html * h5, html * h6 {
-    margin: 0;
-    font-family: 'Helvetica Neue', 'Helvetica', sans-serif; }
-  html * input:focus {
-    outline: none; }
+html * a {
+  color: #999;
+  text-decoration: none; }
+  html * a:visited, html * a:hover {
+    color: #999; }
+html * h1, html * h2, html * h3, html * h4, html * h5, html * h6 {
+  margin: 0;
+  font-family: 'Helvetica Neue', 'Helvetica', sans-serif; }
+html * input:focus {
+  outline: none; }
 
 body {
   background: #eee;

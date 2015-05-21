@@ -10,10 +10,12 @@
 @import 'media-queries/_iphone-6';
 
 html * {
-    font-family: 'Times', 'Times New Roman', serif;
     a {
-        color: #36bd8e;
+        color: #999;
         text-decoration: none;
+        &:visited, &:hover {
+            color: #999;
+        }
     }
     h1, h2, h3, h4, h5, h6 {
         margin: 0;
