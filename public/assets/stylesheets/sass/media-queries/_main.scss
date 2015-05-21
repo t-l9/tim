@@ -130,7 +130,11 @@
         }
         a#nav-toggle {
             z-index:1000;
+            position: absolute;
         }
+
+        a#nav-toggle.active { position: fixed; }
+
         section#top {
             padding: 0;
             position: static;

@@ -300,7 +300,8 @@ main {
 
 section#admin {
   min-height: 100%;
-  padding: 0 50px; }
+  max-width: 960px;
+  padding: 0 20%; }
   section#admin h1 {
     font-weight: bold;
     margin: 0 0 25px 0; }
@@ -428,7 +429,10 @@ section#about {
       bottom: 150px;
       left: -300px; }
     header a#nav-toggle {
-      z-index: 1000; }
+      z-index: 1000;
+      position: absolute; }
+    header a#nav-toggle.active {
+      position: fixed; }
     header section#top {
       padding: 0;
       position: static; }
@@ -712,7 +716,7 @@ section#about {
       margin: 0; }
     main section {
       margin: 25px auto 0 auto; }
-    main section#about, main section#posts {
+    main section#about, main section#posts, main section#admin {
       padding: 0 25px; }
     main.active {
       /* margin-right: -40%; */
