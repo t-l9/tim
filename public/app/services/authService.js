@@ -1,6 +1,5 @@
 angular.module('authService', [])
     .factory('Auth', function($http, $q, AuthToken) {
-
         return {
             login: function(email, password) {
                 return $http.post('/api/authenticate', {

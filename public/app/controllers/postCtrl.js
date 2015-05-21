@@ -1,16 +1,16 @@
-angular.module('postCtrl', ['postService', 'authService'])
+angular.module('postCtrl', ['postService'])
     .controller('postController', function(Post, Auth, AuthToken, $routeParams) {
         var vm = this;
 
         vm.isLoggedIn = Auth.isLoggedIn();
-
         vm.login = function(loginData) {
-            Auth.login(loginData.email, loginData.password)
-			.success(function(data) {
-				if (data.success)
-					window.location.href = '/admin'
 
-			}).error(function(error) {
+            Auth.login(loginData.email, loginData.password)
+            .success(function(data) {
+                if (data.success)
+                    window.location.href = '/admin'
+
+            }).error(function(error) {
                 console.log(error);
             });
         }
@@ -66,7 +66,6 @@ angular.module('postCtrl', ['postService', 'authService'])
                 .error(function(error) {
                     console.log(error);
                 });
-
         }
 
     });
