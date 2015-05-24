@@ -11,10 +11,10 @@
 
 html * {
     a {
-        color: #999;
+        color: $green;
         text-decoration: none;
         &:visited, &:hover {
-            color: #999;
+            color: $green;
         }
     }
     h1, h2, h3, h4, h5, h6 {
