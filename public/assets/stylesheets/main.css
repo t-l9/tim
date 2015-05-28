@@ -280,7 +280,7 @@ main {
     z-index: 100; }
 
 #posts, #post {
-  padding: 0 75px;
+  padding: 0 25px;
   max-width: 960px;
   margin: 0 auto; }
   #posts article, #post article {
@@ -326,7 +326,7 @@ main {
       border: none; }
 
 #post {
-  padding: 0 120px; }
+  padding: 0 65px; }
   #post article h1 {
     color: #ffec55; }
   #post article p:before {
