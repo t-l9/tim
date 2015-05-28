@@ -1,3 +1,8 @@
+<script type="text/javascript">
+    tinymce.init({
+        selector: "textarea"
+     });
+</script>
 <section id="admin" ng-if="post.isLoggedIn">
     <h1>Admin</h1>
 
@@ -19,7 +24,7 @@
                 <div class="row">
                     <div class="large-12 columns">
                         <label>Content
-                            <textarea ng-model="postData.content"></textarea>
+                            <textarea id="post-editor" ng-model="postData.content"></textarea>
                         </label>
                     </div>
                 </div>

@@ -18,7 +18,8 @@
     "passport": "^0.2.1",
     "quick-login": "0.0.1",
     "quill": "^0.19.10",
-    "serve-favicon": "~2.2.0"
+    "serve-favicon": "~2.2.0",
+    "wysiwyg.js": "^1.0.0"
   },
   "devDependencies": {
     "grunt": "^0.4.5",

@@ -3,8 +3,12 @@ section#admin {
     max-width: 960px;
     padding: 0 20%;
     h1 {
-        font-weight: bold;
+        color: $yellow;
+        font-weight: 700;
         margin: 0 0 25px 0;
+        text-shadow: 2px 2px $blue;
+        text-transform: uppercase;
+        letter-spacing: .1em;
     }
     form {
         label {
@@ -33,7 +37,7 @@ section#admin {
 
         button {
             border: none;
-            background: $green;
+            background: $pink;
             padding: 10px 25px;
             border-radius: 4px;
             -webkit-transition: .25s ease-in-out;
@@ -41,14 +45,15 @@ section#admin {
             -o-transition: .25s ease-in-out;
             transition: .25s ease-in-out;
             span {
-                color: #fff;
+                color: $white;
                 font-family: $font-sans-serif;
                 font-size: 16px;
+                font-weight: 700;
             }
 
             &:hover {
                 margin-top: 2px;
-                background: #c4a502;
+                opacity: .9;
             }
         }
     }
