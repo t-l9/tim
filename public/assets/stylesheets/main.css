@@ -11,7 +11,7 @@ header {
   header nav {
     position: fixed;
     left: 0;
-    background: #fefefe;
+    background: #2bb4c6;
     min-height: 100%;
     width: 300px;
     /* border-right: solid 1px #eee; */
@@ -28,20 +28,23 @@ header {
         width: 100%; }
         header nav ul li a {
           font-family: "News Cycle", arial, sans-serif;
-          font-size: 20px;
-          color: #222;
+          text-shadow: 2px 2px #3a6ae4;
+          text-transform: uppercase;
+          letter-spacing: .1em;
+          font-size: 24px;
+          font-weight: 700;
+          color: #ffec55;
           display: block;
           width: 100%;
           padding: 15px 0 15px 50px;
-          border-left: solid 5px #fff;
+          border-left: solid 5px #2bb4c6;
           transition: all 250ms ease-in-out; }
           header nav ul li a:hover {
-            color: #222;
-            background: #f5f5f5;
-            border-left: solid 5px #ffc5df;
+            background: #30b8ca;
+            border-left: solid 5px #2b97a5;
             padding-left: 55px; }
           header nav ul li a:visited {
-            color: #000; }
+            color: #ffec55; }
   header #nav-toggle {
     width: 60px;
     height: 45px;
@@ -83,7 +86,7 @@ header {
   header #nav-toggle span:nth-child(3) {
     top: 28px; }
   header #nav-toggle.active span {
-    background: #444444;
+    background: #ffc5df;
     /* background: #2bfebc; */ }
   header #nav-toggle.active span:nth-child(1) {
     top: 18px;
@@ -141,7 +144,7 @@ header {
       /* background-size: cover; */
       /* background-color: $gray; */
       background-image: url(../../assets/images/header-pattern.png);
-      background-size: 200px;
+      background-size: 225px;
       z-index: 200;
       opacity: 1;
       position: absolute;
