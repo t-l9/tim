@@ -11,7 +11,7 @@ header {
   header nav {
     position: fixed;
     left: 0;
-    background: #2bb4c6;
+    background: #f394bd;
     min-height: 100%;
     width: 300px;
     /* border-right: solid 1px #eee; */
@@ -37,11 +37,11 @@ header {
           display: block;
           width: 100%;
           padding: 15px 0 15px 50px;
-          border-left: solid 5px #2bb4c6;
+          border-left: solid 5px #f394bd;
           transition: all 250ms ease-in-out; }
           header nav ul li a:hover {
-            background: #30b8ca;
-            border-left: solid 5px #2b97a5;
+            background: #8feaba;
+            border-left: solid 5px #54b57b;
             padding-left: 55px; }
           header nav ul li a:visited {
             color: #ffec55; }
@@ -86,7 +86,7 @@ header {
   header #nav-toggle span:nth-child(3) {
     top: 28px; }
   header #nav-toggle.active span {
-    background: #ffc5df;
+    background: #3a6ae4;
     /* background: #2bfebc; */ }
   header #nav-toggle.active span:nth-child(1) {
     top: 18px;
