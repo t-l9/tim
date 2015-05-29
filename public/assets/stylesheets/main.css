@@ -503,26 +503,32 @@ section#about {
         header nav ul li {
           font-size: 22px; }
     header a#nav-toggle {
-      z-index: 1000;
-      position: absolute; }
+      z-index: 1000; }
       header a#nav-toggle span {
-        height: 10px;
-        width: 60px; }
-        header a#nav-toggle span:nth-child(1) {
-          top: 0; }
+        height: 3px;
+        width: 20px; }
         header a#nav-toggle span:nth-child(2) {
-          top: 18px; }
+          top: 8px; }
         header a#nav-toggle span:nth-child(3) {
-          top: 36px; }
+          top: 16px; }
+    header a#nav-toggle.active span {
+      height: 3px;
+      width: 20px; }
+      header a#nav-toggle.active span:nth-child(1) {
+        top: 8px; }
+      header a#nav-toggle.active span:nth-child(3) {
+        top: 8px; }
     header section#top {
       padding: 0;
-      position: static; }
+      position: static;
+      height: 200px; }
       header section#top .overlay {
         display: none; }
       header section#top figure {
         padding: 25px 0; }
         header section#top figure img {
-          width: inherit; }
+          margin-top: 20px;
+          width: 50%; }
         header section#top figure figcaption {
           padding: 0; }
           header section#top figure figcaption #name {
@@ -545,18 +551,35 @@ section#about {
       left: 0; }
 
   main {
-    z-index: 500;
+    top: 0px;
+    z-index: 0;
     position: relative;
     margin: 0;
-    padding: 60px 0 0 0; }
+    padding: 20px 0 25px 0; }
     main #content-overlay {
       margin: 0; }
-    main section#posts {
-      margin: 25px auto 0 auto; } }
-/*********************************************
-***             IPHONE 6 PLUS              ***
-*********************************************/
-@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) {
+    main section {
+      margin: 25px auto 0 auto; }
+    main section#about, main section#posts, main section#admin section#post {
+      /* padding: 0 0px; */ }
+      main section#about article, main section#posts article, main section#admin section#post article {
+        padding: 0; }
+        main section#about article h1, main section#posts article h1, main section#admin section#post article h1 {
+          font-size: 32px; }
+          main section#about article h1 a.title, main section#posts article h1 a.title, main section#admin section#post article h1 a.title {
+            font-size: 32px; }
+    main section#post {
+      padding: 0 0px; }
+      main section#post article {
+        padding: 0 15px; }
+        main section#post article h1 {
+          z-index: 200;
+          font-weight: 700;
+          font-size: 32px; }
+    main.active {
+      left: 0;
+      /* z-index: 1; */ } }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   header {
     width: 100%;
     min-height: 100px;
@@ -643,9 +666,6 @@ section#about {
     main.active {
       left: 0;
       /* z-index: 1; */ } }
-/*********************************************
-***             END IPHONE 6 PLUS          ***
-*********************************************/
 html * a {
   color: #ffec55;
   text-decoration: none; }

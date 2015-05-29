@@ -21,34 +21,49 @@
             }
             a#nav-toggle {
                 z-index:1000;
-                position: absolute;
-                span {
-                    height: 10px;
-                    width: 60px;
 
-                    &:nth-child(1) {
-                        top: 0;
-                    }
+                span {
+                    height: 3px;
+                	width: 20px;
 
                     &:nth-child(2) {
-                        top: 18px;
+                        top: 8px;
                     }
 
                     &:nth-child(3) {
-                        top: 36px;
+                        top: 16px;
+                    }
+                }
+            }
+
+            a#nav-toggle.active {
+                span {
+                    height: 3px;
+                	width: 20px;
+
+                    &:nth-child(1) {
+                        top: 8px;
+                    }
+
+                    &:nth-child(3) {
+                        top: 8px;
                     }
                 }
             }
             section#top {
                 padding: 0;
                 position: static;
+                height: 200px;
                 .overlay {
                     display: none;
                 }
 
                 figure {
                     padding: 25px 0;
-                    img { width: inherit; }
+                    img {
+                        margin-top: 20px;
+                        width: 50%;
+                    }
                     figcaption {
                         padding: 0;
                         #name {
@@ -85,13 +100,49 @@
             #content-overlay {
                 margin: 0;
             }
-            z-index: 500;
+            top: 0px;
+            z-index: 0;
             position: relative;
             margin: 0;
-            padding: 60px 0 0 0;
-            section#posts {
+            padding: 20px 0 25px 0;
+            section {
                 margin: 25px auto 0 auto;
             }
-            &.active {}
+
+        section#about, section#posts, section#admin section#post {
+            /* padding: 0 0px; */
+            article {
+                padding: 0;
+                h1 {
+                    font-size: 32px;
+                    a.title {
+                        font-size: 32px;
+                    }
+                }
+
+
+            }
+
+        }
+
+        section#post {
+            padding: 0 0px;
+            article {
+                padding: 0 15px;
+                h1 {
+                    z-index: 200;
+                	font-weight: 700;
+                	font-size: 32px;
+                }
+            }
+        }
+
+
+
+            &.active {
+                left: 0;
+                /* z-index: 1; */
+            }
+
         }
 }
