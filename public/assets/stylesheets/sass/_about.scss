@@ -9,14 +9,12 @@ section#about {
         text-transform: uppercase;
         letter-spacing: .1em;
         &:after {
-
             width: 75px;
             height: 3px;
             margin: 25px 0 0 0;
             background: $pink;
             display: block;
             content: "";
-
         }
     }
     p {

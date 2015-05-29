@@ -1,9 +1,6 @@
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
-    /* #nav-toggle, nav {
-        display: none;
-    } */
     header {
         width: 100%;
         min-height: 100px;
@@ -78,7 +75,6 @@ and (max-device-width : 480px) {
             display: none;
         }
         &.active {
-            /* margin-right: -40%; */
             nav {
                 z-index: 900;
                 left: 0;
@@ -96,10 +92,6 @@ and (max-device-width : 480px) {
         section#posts {
             margin: 25px auto 0 auto;
         }
-        &.active {
-            /* margin-right: -40%; */
-            /* z-index: 1; */
-        }
-
+        &.active {}
     }
 }

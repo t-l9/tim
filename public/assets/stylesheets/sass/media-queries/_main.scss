@@ -1,6 +1,6 @@
 @media screen and (max-width: 1200px) {
     section#post {
-        padding: 0 25px !important;
+        padding: 0 25px;
         article {
                 h1 {
                     line-height: 46px;
@@ -13,35 +13,10 @@
     }
 }
 
-/* @media screen and (max-width: 1026px) {
-    header {
-        width: 40%;
-        background: #000;
-
-
-    }
-    main {
-        margin: 0 0 0 40%;
-        #content-overlay {
-            margin: 0 0 0 40%;
-        }
-        section#posts {
-            padding: 0 0 0 40px;
-            article {
-
-                &:last-child {
-                    float: left;
-                }
-
-            }
-        }
-    }
-}
- */
 @media screen and (max-width: 1026px) {
     main {
         section#post {
-            padding: 0 25px !important;
+            padding: 0 25px;
             article {
                     h1 {
                         line-height: 46px;
@@ -72,20 +47,14 @@
         }
     }
 }
+
 @media only screen and (max-width: 768px) {
     header {
         width: 100%;
         min-height: 325px;
         position: relative;
-        /* nav {
-            left: -300px;
-            &.active {
-                left: 300px;
-            }
-        } */
         #nav-toggle {
             position: fixed;
-
         }
         #top {
             padding: 25px 0;
@@ -122,114 +91,10 @@
                 float: left;
             }
         }
-
-
         &.active {
             left: 300px;
             /* z-index: 1; */
         }
 
     }
-/*     header {
-    width: 100%;
-    height: 680px;
-    position: static;
-    background: #f5f5f5;
-    nav {
-        z-index: -1;
-        top: 0;
-        right: 0;
-        bottom: 150px;
-        left: -300px;
-    }
-    a#nav-toggle {
-        z-index:1000;
-        position: absolute;
-    }
-
-    a#nav-toggle.active { position: fixed; }
-
-    section#top {
-        padding: 0;
-        position: relative;
-
-        figure {
-            padding: 25px 0;
-            img { margin: 10% 0; }
-            figcaption {
-                padding: 0 25%;
-                #name {
-                    margin: 15px 0 0 0;
-                    font-size: 16px;
-                    line-height: 60px;
-                    vertical-align: middle;
-                    color: #000;
-                    line-height: 25px;
-                }
-                #job {
-
-                }
-                #title {
-                    display: none;
-                    font-size: 16px;
-                    font-style: italic;
-                    color: #666;
-                }
-            }
-        }
-        p#love {
-            display: none;
-        }
-    }
-    section#bottom {
-        display: none;
-    }
-    &.active {
-        margin-right: -40%;
-        nav {
-            z-index: 900;
-            left: 0;
-        }
-    }
-}
-main {
-    #content-overlay {
-        margin: 0;
-    }
-    z-index: 500;
-    position: relative;
-    margin: 0;
-    padding: 60px 0 0 0;
-    section#posts {
-        margin: 25px auto 0 auto;
-    }
-    &.active {
-        margin-right: -40%;
-        z-index: 1;
-    }
-
-    #admin {
-        padding: 0 10px;
-        text-align: center;
-        button[type="submit"].right.button {
-            float: none !important;
-        }
-    }
-
-    section#posts {
-        article {
-            padding: 0;
-        }
-    }
-
-    section#post {
-        padding: 0 50px;
-        article {
-            padding: 0;
-        }
-    }
-
-
-
-} */
 }

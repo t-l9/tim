@@ -14,7 +14,6 @@ header {
     background: #f394bd;
     min-height: 100%;
     width: 300px;
-    /* border-right: solid 1px #eee; */
     text-align: center;
     transition: all 250ms ease-in-out; }
     header nav ul {
@@ -68,7 +67,6 @@ header {
     height: 5px;
     width: 30px;
     background: #ffffff;
-    /* background: #2bfebc; */
     opacity: 1;
     left: 0;
     -webkit-transform: rotate(0deg);
@@ -86,8 +84,7 @@ header {
   header #nav-toggle span:nth-child(3) {
     top: 28px; }
   header #nav-toggle.active span {
-    background: #3a6ae4;
-    /* background: #2bfebc; */ }
+    background: #3a6ae4; }
   header #nav-toggle.active span:nth-child(1) {
     top: 18px;
     -webkit-transform: rotate(135deg);
@@ -114,15 +111,6 @@ header {
     bottom: 0;
     left: 0;
     padding: 50px 50px 25px 50px;
-    /* background: $gray; */
-    /* background: rgba(58,58,58,1);
-    background: -moz-linear-gradient(top, rgba(58,58,58,1) 0%, rgba(35,35,35,1) 66%, rgba(35,35,35,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(58,58,58,1)), color-stop(66%, rgba(35,35,35,1)), color-stop(100%, rgba(35,35,35,1)));
-    background: -webkit-linear-gradient(top, rgba(58,58,58,1) 0%, rgba(35,35,35,1) 66%, rgba(35,35,35,1) 100%);
-    background: -o-linear-gradient(top, rgba(58,58,58,1) 0%, rgba(35,35,35,1) 66%, rgba(35,35,35,1) 100%);
-    background: -ms-linear-gradient(top, rgba(58,58,58,1) 0%, rgba(35,35,35,1) 66%, rgba(35,35,35,1) 100%);
-    background: linear-gradient(to bottom, rgba(58,58,58,1) 0%, rgba(35,35,35,1) 66%, rgba(35,35,35,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a3a', endColorstr='#232323', GradientType=0 ); */
     background: #444545;
     background: -moz-linear-gradient(top, #444545 0%, #3b3b3b 66%, #3b3b3b 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, #444545), color-stop(66%, #3b3b3b), color-stop(100%, #3b3b3b));
@@ -134,24 +122,6 @@ header {
     header #top .overlay {
       position: relative;
       z-index: 200;
-      /*     background:rgba(0,0,0,0.3);
-      background-image: -webkit-gradient(
-          linear,
-          left top,
-          left bottom,
-          color-stop(0, #b9b1b0),
-          color-stop(1, #60acca)
-      );
-      background-image: -o-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-      background-image: -moz-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-      background-image: -webkit-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-      background-image: -ms-linear-gradient(bottom, #b9b1b0 0%, #60acca 100%);
-      background-image: linear-gradient(to bottom, #b9b1b0 0%, #60acca 100%);
-      background: #222; */
-      /* background: url(../../assets/images/sidebar-bg.png) 0 0 no-repeat; */
-      /* background-size: cover; */
-      /* background-color: $gray; */
-      background-image: url(../../assets/images/header-pattern.png);
       background-image: url(../../assets/images/pizza-bacon.png);
       background-size: 225px;
       z-index: 200;
@@ -175,26 +145,15 @@ header {
         margin: 25px 0 10px 0;
         font-size: 42px;
         text-transform: uppercase;
-        font-weight: 700;
-        /* background: linear-gradient(330deg, #2bfebc 0%, #6ab6fc 25%, #fd70fc 50%, #fd766e 75%, #fda728 100%); */
-        /* -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent; */
-        /*     -ms-transform: rotate(-3deg); IE 9
-        -webkit-transform: rotate(-3deg); Chrome, Safari, Opera
-        transform: rotate(-3deg); */ }
+        font-weight: 700; }
         header #top figure figcaption #name a {
           color: #333;
-          /* color: #fcf738; */
-          /* color: #fd70fc; */
           font-family: "News Cycle", arial, sans-serif;
-          /* font-family: 'Permanent Marker', cursive; */
-          font-style: italic;
-          /* text-shadow: 2px 2px #fefefe; */ }
+          font-style: italic; }
       header #top figure figcaption #job {
         font-size: 16px;
         font-family: "News Cycle", arial, sans-serif;
-        color: #ffec55;
-        /* opacity: .65; */ }
+        color: #ffec55; }
       header #top figure figcaption #title {
         display: none;
         font-size: 20px;
@@ -284,7 +243,6 @@ main {
   max-width: 960px;
   margin: 0 auto; }
   #posts article, #post article {
-    /* background: #eee; */
     text-align: left;
     margin: 0 auto 25px auto;
     border-bottom: 1px solid #fff;
@@ -410,39 +368,14 @@ section#about {
 
 @media screen and (max-width: 1200px) {
   section#post {
-    padding: 0 25px !important; }
+    padding: 0 25px; }
     section#post article {
       padding: 0 40px; }
       section#post article h1 {
         line-height: 46px; } }
-/* @media screen and (max-width: 1026px) {
-    header {
-        width: 40%;
-        background: #000;
-
-
-    }
-    main {
-        margin: 0 0 0 40%;
-        #content-overlay {
-            margin: 0 0 0 40%;
-        }
-        section#posts {
-            padding: 0 0 0 40px;
-            article {
-
-                &:last-child {
-                    float: left;
-                }
-
-            }
-        }
-    }
-}
- */
 @media screen and (max-width: 1026px) {
   main section#post {
-    padding: 0 25px !important; }
+    padding: 0 25px; }
     main section#post article {
       padding: 0 40px; }
       main section#post article h1 {
@@ -456,13 +389,7 @@ section#about {
   header {
     width: 100%;
     min-height: 325px;
-    position: relative;
-    /* nav {
-        left: -300px;
-        &.active {
-            left: 300px;
-        }
-    } */ }
+    position: relative; }
     header #nav-toggle {
       position: fixed; }
     header #top {
@@ -491,114 +418,8 @@ section#about {
       float: left; }
     main.active {
       left: 300px;
-      /* z-index: 1; */ }
-
-  /*     header {
-      width: 100%;
-      height: 680px;
-      position: static;
-      background: #f5f5f5;
-      nav {
-          z-index: -1;
-          top: 0;
-          right: 0;
-          bottom: 150px;
-          left: -300px;
-      }
-      a#nav-toggle {
-          z-index:1000;
-          position: absolute;
-      }
-  
-      a#nav-toggle.active { position: fixed; }
-  
-      section#top {
-          padding: 0;
-          position: relative;
-  
-          figure {
-              padding: 25px 0;
-              img { margin: 10% 0; }
-              figcaption {
-                  padding: 0 25%;
-                  #name {
-                      margin: 15px 0 0 0;
-                      font-size: 16px;
-                      line-height: 60px;
-                      vertical-align: middle;
-                      color: #000;
-                      line-height: 25px;
-                  }
-                  #job {
-  
-                  }
-                  #title {
-                      display: none;
-                      font-size: 16px;
-                      font-style: italic;
-                      color: #666;
-                  }
-              }
-          }
-          p#love {
-              display: none;
-          }
-      }
-      section#bottom {
-          display: none;
-      }
-      &.active {
-          margin-right: -40%;
-          nav {
-              z-index: 900;
-              left: 0;
-          }
-      }
-  }
-  main {
-      #content-overlay {
-          margin: 0;
-      }
-      z-index: 500;
-      position: relative;
-      margin: 0;
-      padding: 60px 0 0 0;
-      section#posts {
-          margin: 25px auto 0 auto;
-      }
-      &.active {
-          margin-right: -40%;
-          z-index: 1;
-      }
-  
-      #admin {
-          padding: 0 10px;
-          text-align: center;
-          button[type="submit"].right.button {
-              float: none !important;
-          }
-      }
-  
-      section#posts {
-          article {
-              padding: 0;
-          }
-      }
-  
-      section#post {
-          padding: 0 50px;
-          article {
-              padding: 0;
-          }
-      }
-  
-  
-  
-  } */ }
+      /* z-index: 1; */ } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* #nav-toggle, nav {
-      display: none;
-  } */
   header {
     width: 100%;
     min-height: 100px;
@@ -652,11 +473,9 @@ section#about {
             font-style: italic; }
     header section#bottom {
       display: none; }
-    header.active {
-      /* margin-right: -40%; */ }
-      header.active nav {
-        z-index: 900;
-        left: 0; }
+    header.active nav {
+      z-index: 900;
+      left: 0; }
 
   main {
     z-index: 500;
@@ -666,14 +485,8 @@ section#about {
     main #content-overlay {
       margin: 0; }
     main section#posts {
-      margin: 25px auto 0 auto; }
-    main.active {
-      /* margin-right: -40%; */
-      /* z-index: 1; */ } }
+      margin: 25px auto 0 auto; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-  /* #nav-toggle, nav {
-      display: none;
-  } */
   header {
     width: 100%;
     min-height: 100px;
@@ -727,11 +540,9 @@ section#about {
             font-style: italic; }
     header section#bottom {
       display: none; }
-    header.active {
-      /* margin-right: -40%; */ }
-      header.active nav {
-        z-index: 900;
-        left: 0; }
+    header.active nav {
+      z-index: 900;
+      left: 0; }
 
   main {
     z-index: 500;
@@ -741,17 +552,11 @@ section#about {
     main #content-overlay {
       margin: 0; }
     main section#posts {
-      margin: 25px auto 0 auto; }
-    main.active {
-      /* margin-right: -40%; */
-      /* z-index: 1; */ } }
+      margin: 25px auto 0 auto; } }
 /*********************************************
 ***             IPHONE 6 PLUS              ***
 *********************************************/
 @media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) {
-  /* #nav-toggle, nav {
-      display: none;
-  } */
   header {
     width: 100%;
     min-height: 100px;
@@ -768,31 +573,32 @@ section#about {
         header nav ul li {
           font-size: 22px; }
     header a#nav-toggle {
-      z-index: 1000;
-      /*     position: absolute; */ }
+      z-index: 1000; }
       header a#nav-toggle span {
-                    /* &:nth-child(1) {
-                        top: 8;
-                    }
-
-                    &:nth-child(2) {
-                        top: 18px;
-                    }
-
-                    &:nth-child(3) {
-                        top: 28px;
-                    } */ }
+        height: 3px;
+        width: 20px; }
+        header a#nav-toggle span:nth-child(2) {
+          top: 8px; }
+        header a#nav-toggle span:nth-child(3) {
+          top: 16px; }
+    header a#nav-toggle.active span {
+      height: 3px;
+      width: 20px; }
+      header a#nav-toggle.active span:nth-child(1) {
+        top: 8px; }
+      header a#nav-toggle.active span:nth-child(3) {
+        top: 8px; }
     header section#top {
       padding: 0;
       position: static;
-      height: 200px; }
+      height: 275px; }
       header section#top .overlay {
         display: none; }
       header section#top figure {
         padding: 25px 0; }
         header section#top figure img {
           margin-top: 25px;
-          width: 35%; }
+          width: 60%; }
         header section#top figure figcaption {
           padding: 0; }
           header section#top figure figcaption #name {
@@ -810,24 +616,30 @@ section#about {
             font-style: italic; }
     header section#bottom {
       display: none; }
-    header.active {
-      /* margin-right: -40%; */ }
-      header.active nav {
-        z-index: 900;
-        left: 0; }
+    header.active nav {
+      z-index: 900;
+      left: 0; }
 
   main {
     top: 0px;
     z-index: 0;
     position: relative;
     margin: 0;
-    padding: 60px 0 25px 0; }
+    padding: 20px 0 25px 0; }
     main #content-overlay {
       margin: 0; }
     main section {
       margin: 25px auto 0 auto; }
-    main section#about, main section#posts, main section#admin {
-      padding: 0 25px; }
+    main section#about, main section#posts, main section#admin section#post {
+      /* padding: 0 0px; */ }
+    main section#post {
+      padding: 0 0px; }
+      main section#post article {
+        padding: 0 15px; }
+        main section#post article h1 {
+          z-index: 200;
+          font-weight: 700;
+          font-size: 32px; }
     main.active {
       left: 0;
       /* z-index: 1; */ } }
@@ -835,10 +647,10 @@ section#about {
 ***             END IPHONE 6 PLUS          ***
 *********************************************/
 html * a {
-  color: #27ae60;
+  color: #ffec55;
   text-decoration: none; }
   html * a:visited, html * a:hover {
-    color: #27ae60; }
+    color: #ffec55; }
 html * h1, html * h2, html * h3, html * h4, html * h5, html * h6 {
   margin: 0;
   font-family: 'Helvetica Neue', 'Helvetica', sans-serif; }
@@ -846,13 +658,7 @@ html * input:focus {
   outline: none; }
 
 body {
-  background: #eee;
-  /* .ng-leave {
-      -webkit-animation:fadeOut .4s both ease-out;
-      -moz-animation:fadeOut .4s both ease-out;
-      animation:fadeOut .4s both ease-out;
-   }
-   */ }
+  background: #eee; }
   body #content-views {
     position: relative; }
   body .ng-enter, body .ng-leave {

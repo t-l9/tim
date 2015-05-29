@@ -11,10 +11,10 @@
 
 html * {
     a {
-        color: $green;
+        color: $yellow;
         text-decoration: none;
         &:visited, &:hover {
-            color: $green;
+            color: $yellow;
         }
     }
     h1, h2, h3, h4, h5, h6 {
@@ -42,13 +42,6 @@ body {
         -moz-animation:fadeIn .4s both ease-in-out;
         animation:fadeIn .4s both ease-in-out;
      }
-
-     /* .ng-leave {
-         -webkit-animation:fadeOut .4s both ease-out;
-         -moz-animation:fadeOut .4s both ease-out;
-         animation:fadeOut .4s both ease-out;
-      }
-      */
 
     input[type="text"] {
         padding: 10px 60px 10px 20px;

@@ -5,9 +5,6 @@
     and (max-device-width: 640px),
     only screen and (max-device-width: 667px),
     only screen and (max-width: 480px){
-        /* #nav-toggle, nav {
-            display: none;
-        } */
         header {
             width: 100%;
             min-height: 100px;
@@ -28,26 +25,39 @@
             }
             a#nav-toggle {
                 z-index:1000;
-            /*     position: absolute; */
-                span {
 
-                    /* &:nth-child(1) {
-                        top: 8;
-                    }
+                span {
+                    height: 3px;
+                	width: 20px;
 
                     &:nth-child(2) {
-                        top: 18px;
+                        top: 8px;
                     }
 
                     &:nth-child(3) {
-                        top: 28px;
-                    } */
+                        top: 16px;
+                    }
+                }
+            }
+
+            a#nav-toggle.active {
+                span {
+                    height: 3px;
+                	width: 20px;
+
+                    &:nth-child(1) {
+                        top: 8px;
+                    }
+
+                    &:nth-child(3) {
+                        top: 8px;
+                    }
                 }
             }
             section#top {
                 padding: 0;
                 position: static;
-                height: 200px;
+                height: 275px;
                 .overlay {
                     display: none;
                 }
@@ -56,7 +66,7 @@
                     padding: 25px 0;
                     img {
                         margin-top: 25px;
-                        width: 35%;
+                        width: 60%;
                     }
                     figcaption {
                         padding: 0;
@@ -84,7 +94,6 @@
                 display: none;
             }
             &.active {
-                /* margin-right: -40%; */
                 nav {
                     z-index: 900;
                     left: 0;
@@ -99,14 +108,28 @@
             z-index: 0;
             position: relative;
             margin: 0;
-            padding: 60px 0 25px 0;
+            padding: 20px 0 25px 0;
             section {
                 margin: 25px auto 0 auto;
             }
 
-            section#about, section#posts, section#admin {
-                padding: 0 25px;
+        section#about, section#posts, section#admin section#post {
+            /* padding: 0 0px; */
+
+        }
+
+        section#post {
+            padding: 0 0px;
+            article {
+                padding: 0 15px;
+                h1 {
+                    z-index: 200;
+                	font-weight: 700;
+                	font-size: 32px;
+                }
             }
+        }
+
 
 
             &.active {

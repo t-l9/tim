@@ -3,7 +3,6 @@
     max-width: 960px;
     margin: 0 auto;
     article {
-        /* background: #eee; */
         text-align: left;
         margin: 0 auto 25px auto;
         border-bottom: 1px solid #fff;
@@ -45,9 +44,7 @@
                 color: $white;
                 font-family: inherit;
             }
-
         }
-
         &:last-child {
             border: none;
         }
@@ -68,8 +65,6 @@
             display: block;
             border-radius: 3px;
             content: "";
-
-
         }
     }
 }
