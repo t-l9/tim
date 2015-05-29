@@ -579,6 +579,69 @@ section#about {
     main.active {
       left: 0;
       /* z-index: 1; */ } }
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+  header {
+    width: 100%;
+    min-height: 100px;
+    position: static; }
+    header nav {
+      z-index: -1;
+      top: 0;
+      right: 0;
+      bottom: 150px;
+      left: -60%;
+      width: 60%; }
+      header nav ul {
+        margin-top: 100px; }
+        header nav ul li {
+          font-size: 22px; }
+    header a#nav-toggle {
+      z-index: 1000; }
+      header a#nav-toggle span {
+        height: 3px;
+        width: 20px; }
+        header a#nav-toggle span:nth-child(2) {
+          top: 8px; }
+        header a#nav-toggle span:nth-child(3) {
+          top: 16px; }
+    header a#nav-toggle.active span {
+      height: 3px;
+      width: 20px; }
+      header a#nav-toggle.active span:nth-child(1) {
+        top: 8px; }
+      header a#nav-toggle.active span:nth-child(3) {
+        top: 8px; }
+    header section#top {
+      padding: 0;
+      position: static;
+      height: 200px; }
+      header section#top .overlay {
+        display: none; }
+      header section#top figure {
+        padding: 25px 0; }
+        header section#top figure img {
+          margin-top: 20px;
+          width: 35%; }
+        header section#top figure figcaption {
+          padding: 0; }
+          header section#top figure figcaption #name {
+            margin: 25px 0 5px 0;
+            font-size: 32px;
+            line-height: 60px;
+            vertical-align: middle;
+            color: #000;
+            line-height: 25px; }
+          header section#top figure figcaption #job {
+            display: none; }
+          header section#top figure figcaption #title {
+            display: block;
+            font-size: 30px;
+            font-style: italic; }
+    header section#bottom {
+      display: none; }
+    header.active nav {
+      z-index: 900;
+      left: 0; } }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   header {
     width: 100%;
