@@ -24,6 +24,19 @@ html * {
     input:focus {
         outline: none;
     }
+    code {
+        display: block;
+        margin: 5px 0;
+        padding: 10px;
+        border: none;
+        background: #333;
+        color: $white;
+        border-radius: 4px;
+        .var { color: #F92672; }
+        .function { color: #66D9EF; }
+        .comment { color: #777; }
+
+    }
 }
 
 body {

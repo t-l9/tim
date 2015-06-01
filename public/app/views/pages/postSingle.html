@@ -2,7 +2,7 @@
     <div class="row">
         <article>
             <h1>{{ post.post.title }}</h1>
-            <p>{{ post.post.content }}</p>
+            <div ng-bind-html="post.post.content | postContent"></div>
         </article>
     </div>
 </section>

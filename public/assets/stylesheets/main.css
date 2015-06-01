@@ -287,7 +287,7 @@ main {
   padding: 0 65px; }
   #post article h1 {
     color: #ffec55; }
-  #post article p:before {
+  #post article p:first-child:before {
     width: 75px;
     height: 3px;
     margin: 0 0 25px;
@@ -835,6 +835,20 @@ html * h1, html * h2, html * h3, html * h4, html * h5, html * h6 {
   font-family: 'Helvetica Neue', 'Helvetica', sans-serif; }
 html * input:focus {
   outline: none; }
+html * code {
+  display: block;
+  margin: 5px 0;
+  padding: 10px;
+  border: none;
+  background: #333;
+  color: #ffffff;
+  border-radius: 4px; }
+  html * code .var {
+    color: #F92672; }
+  html * code .function {
+    color: #66D9EF; }
+  html * code .comment {
+    color: #777; }
 
 body {
   background: #eee; }

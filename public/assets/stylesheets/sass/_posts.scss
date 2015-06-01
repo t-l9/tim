@@ -56,8 +56,7 @@
         h1 {
             color: $yellow;
         }
-        p:before {
-
+        p:first-child:before {
             width: 75px;
             height: 3px;
             margin: 0 0 25px;

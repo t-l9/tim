@@ -6,7 +6,7 @@
                     <a href="/posts/{{ post._id }}" class="title">{{ post.title }}</a>
                 </h1>
                 <span class="date"><span class="published">Published on: </span>{{ post.date }}</span>
-                <p ng-bind-html="post.content"></p>
+                <p ng-bind-html="post.content | postContent"></p>
 
         </article>
     </div>
