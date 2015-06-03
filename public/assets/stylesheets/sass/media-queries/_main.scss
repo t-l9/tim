@@ -101,7 +101,11 @@
             a.back {
                 position: relative;
                 left: 0;
-                padding: 0;
+                &:before {
+                    content: '⇜';
+                    padding: 0;
+                    color: $pink;
+                }
             }
         }
 
