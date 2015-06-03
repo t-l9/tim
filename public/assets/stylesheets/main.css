@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=News+Cycle:400,700);
 @import url(http://fonts.googleapis.com/css?family=Droid+Serif);
 header {
@@ -285,16 +286,34 @@ main {
 
 #post {
   padding: 0 65px; }
-  #post article h1 {
-    color: #ffec55; }
-  #post article p:first-child:before {
-    width: 75px;
-    height: 3px;
-    margin: 0 0 25px;
-    background: #ffc5df;
+  #post a.back {
     display: block;
-    border-radius: 3px;
-    content: ""; }
+    position: fixed;
+    top: 0;
+    left: 50%;
+    /* height: 50px;
+    width: 50px; */
+    background: transparent;
+    color: #ffec55;
+    padding: 10px 25px;
+    font-size: 20px;
+    text-shadow: 1px 1px #3a6ae4; }
+    #post a.back:before {
+      content: '⇜';
+      padding-right: 15px;
+      color: #ffc5df; }
+  #post article {
+    margin: 35px 0 0 0; }
+    #post article h1 {
+      color: #ffec55; }
+    #post article p:first-child:before {
+      width: 75px;
+      height: 3px;
+      margin: 0 0 25px;
+      background: #ffc5df;
+      display: block;
+      border-radius: 3px;
+      content: ""; }
 
 section#admin {
   min-height: 100%;
@@ -421,6 +440,10 @@ section#about {
       padding: 0 25px; }
     main section#posts article:last-child {
       float: left; }
+    main section#post a.back {
+      position: relative;
+      left: 0;
+      padding: 0; }
     main.active {
       left: 300px;
       /* z-index: 1; */ } }

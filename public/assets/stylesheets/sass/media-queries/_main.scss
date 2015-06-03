@@ -96,6 +96,15 @@
                 float: left;
             }
         }
+
+        section#post {
+            a.back {
+                position: relative;
+                left: 0;
+                padding: 0;
+            }
+        }
+
         &.active {
             left: 300px;
             /* z-index: 1; */

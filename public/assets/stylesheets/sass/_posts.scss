@@ -52,7 +52,26 @@
 }
 #post {
     padding: 0 65px;
+    a.back {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        /* height: 50px;
+        width: 50px; */
+        background: transparent;
+        color: $yellow;
+        padding: 10px 25px;
+        font-size: 20px;
+        text-shadow: 1px 1px $blue;
+        &:before {
+            content: '⇜';
+            padding-right: 15px;
+            color: $pink;
+        }
+    }
     article {
+        margin: 35px 0 0 0;
         h1 {
             color: $yellow;
         }
