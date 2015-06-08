@@ -326,7 +326,8 @@ section#admin {
     margin: 0 0 25px 0;
     text-shadow: 2px 2px #3a6ae4;
     text-transform: uppercase;
-    letter-spacing: .1em; }
+    letter-spacing: .1em;
+    font-family: "News Cycle", arial, sans-serif; }
   section#admin form label {
     font-family: "News Cycle", arial, sans-serif;
     font-size: 16px; }
@@ -373,7 +374,8 @@ section#about {
     color: #ffec55;
     text-shadow: 2px 2px #3a6ae4;
     text-transform: uppercase;
-    letter-spacing: .1em; }
+    letter-spacing: .1em;
+    font-family: "News Cycle", arial, sans-serif; }
     section#about h1:after {
       width: 75px;
       height: 3px;
@@ -874,6 +876,8 @@ html * code {
   border-radius: 4px; }
   html * code .var {
     color: #F92672; }
+  html * code .string {
+    color: #e6db74; }
   html * code .function {
     color: #66D9EF; }
   html * code .comment {

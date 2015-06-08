@@ -10,6 +10,7 @@ section#about {
         text-shadow: 2px 2px $blue;
         text-transform: uppercase;
         letter-spacing: .1em;
+        font-family: $font-sans-serif;
         &:after {
             width: 75px;
             height: 3px;
