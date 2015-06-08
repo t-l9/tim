@@ -303,7 +303,7 @@ main {
       padding-right: 15px;
       color: #ffc5df; }
   #post article {
-    margin: 35px 0 0 0; }
+    /* margin: 35px 0 0 0; */ }
     #post article h1 {
       color: #ffec55; }
     #post article p:first-child:before {
