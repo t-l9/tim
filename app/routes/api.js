@@ -47,6 +47,7 @@ module.exports = function(app, express) {
 
             post.title   = req.body.title;
             post.content = req.body.content;
+            post.url     = req.body.title.split(' ').join('-').toLowerCase();
             post.date    = req.body.date;
             post.img     = req.body.img;
             post.topic   = req.body.topic;
@@ -85,14 +86,22 @@ module.exports = function(app, express) {
 //---------------------------------------
 //  single post route
 //---------------------------------------
-    apiRouter.route('/posts/:post_id')
+    // apiRouter.route('/posts/:post_id')
+    //     .get(function(req, res) {
+    //         Post.findById(req.params.post_id, function(err, post) {
+    //             if (err) res.send(err);
+    //             return res.json(post)
+    //         })
+    //     });
+    apiRouter.route('/posts/:url')
         .get(function(req, res) {
-            Post.findById(req.params.post_id, function(err, post) {
+            // console.log(req.params.url);
+            Post.find({ url: req.params.url } , function(err, post) {
+                console.log(post);
                 if (err) res.send(err);
                 return res.json(post)
             })
         });
-
 //---------------------------------------
 //  END single post route
 //---------------------------------------

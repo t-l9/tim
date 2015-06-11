@@ -43,15 +43,13 @@ angular.module('postCtrl', ['postService'])
                         data[i].content = data[i].content.split(/\s+/).slice(0, 30).join(" ") + '...';
 
                     };
-
-
                 };
 
                 vm.posts = data;
 
              });
 
-        Post.get($routeParams.post_id)
+        Post.get($routeParams.url)
             .success(function(data) {
                 vm.post = data;
             });

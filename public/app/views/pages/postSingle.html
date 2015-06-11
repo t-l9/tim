@@ -2,8 +2,8 @@
     <div class="row">
         <!-- <a class="back" href="/">back</a> -->
         <article>
-            <h1>{{ post.post.title }}</h1>
-            <div ng-bind-html="post.post.content | postContent"></div>
+            <h1>{{ post.post[0].title }}</h1>
+            <div ng-bind-html="post.post[0].content | postContent"></div>
         </article>
     </div>
 </section>

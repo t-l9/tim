@@ -3,8 +3,8 @@ angular.module('postService', [])
 
         var postFactory = {};
 
-        postFactory.get = function(id) {
-            return $http.get('/api/posts/' + id);
+        postFactory.get = function(url) {
+            return $http.get('/api/posts/' + url);
         }
 
         postFactory.all = function() {

@@ -11,7 +11,7 @@ angular.module('app.routes', ['ngRoute'])
 			controllerAs: 'post'
 		})
 
-		.when('/posts/:post_id', {
+		.when('/posts/:url', {
 			templateUrl: 'app/views/pages/postSingle.html',
 			controller: 'postController',
 			controllerAs: 'post'
