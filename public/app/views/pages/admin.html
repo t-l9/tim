@@ -77,3 +77,10 @@
         </div>
     </form>
 </section>
+
+<section id="deletePosts" ng="!post.isLoggedIn">
+
+    <ul ng-repeat="post in post.posts" class="small-11 large-centered columns">
+        <li data-id="{{ post._id }}">{{ post.title }}</li>
+    </ul>
+</section>

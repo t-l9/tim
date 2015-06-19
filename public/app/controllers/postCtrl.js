@@ -66,4 +66,8 @@ angular.module('postCtrl', ['postService'])
                 });
         }
 
+        vm.deletePost = function() {
+            
+        }
+
     });
