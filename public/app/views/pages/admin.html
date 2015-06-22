@@ -46,6 +46,16 @@
             </div>
         </div>
     </form>
+
+</section>
+
+<section id="deletePosts" ng-if="post.isLoggedIn">
+
+    <ul ng-repeat="post in post.posts" class="small-11 large-centered columns">
+        <li ng-model="postData.id">
+            <a href="#" ng-click="deletePost(post._id)">{{ post.title }}</a>
+        </li>
+    </ul>
 </section>
 
 <section id="admin" ng-if="!post.isLoggedIn">
@@ -76,11 +86,4 @@
             </div>
         </div>
     </form>
-</section>
-
-<section id="deletePosts" ng="!post.isLoggedIn">
-
-    <ul ng-repeat="post in post.posts" class="small-11 large-centered columns">
-        <li data-id="{{ post._id }}">{{ post.title }}</li>
-    </ul>
 </section>

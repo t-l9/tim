@@ -77,6 +77,16 @@ module.exports = function(app, express) {
                         return res.json(posts);
                     });
 
+        })
+
+        apiRouter.route('/posts/:postId')
+            .delete(function(req, res) {
+                Post.remove({
+                    _id: req.params.postId
+                },function(err, post) {
+                    if (err) res.send(err);
+                    res.json({ message: 'Post deleted.' });
+                })
         });
 
 //---------------------------------------

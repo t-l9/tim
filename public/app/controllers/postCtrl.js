@@ -1,5 +1,5 @@
 angular.module('postCtrl', ['postService'])
-    .controller('postController', function(Post, Auth, AuthToken, $routeParams) {
+    .controller('postController', function(Post, Auth, AuthToken, $routeParams, $scope) {
         var vm = this;
 
         vm.isLoggedIn = Auth.isLoggedIn();
@@ -66,8 +66,16 @@ angular.module('postCtrl', ['postService'])
                 });
         }
 
-        vm.deletePost = function() {
-            
+        $scope.deletePost = function(postId) {
+            Post.delete(postId)
+                .success(function(data) {
+                    console.log(data);
+                    
+                })
+                .error(function(error) {
+                    console.log(error);
+                });
         }
+
 
     });

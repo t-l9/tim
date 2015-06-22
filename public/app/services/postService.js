@@ -15,6 +15,10 @@ angular.module('postService', [])
             return $http.post('/api/posts/', postData);
         }
 
+        postFactory.delete = function(postId) {
+            return $http.delete('/api/posts/' + postId);
+        }
+
         return postFactory;
 
     });
